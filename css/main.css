@@ -46,3 +46,8 @@
   letter-spacing: 0.04em;
   color: #FFF;
 }
+
+.products__list-item {
+  background: #FFB8CA;
+  border-radius: 24px;
+}
