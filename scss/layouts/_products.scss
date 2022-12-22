@@ -1,5 +1,7 @@
 @use '../utils/variables';
 
+ul{list-style: none;}
+
 .products__title{
     display: flex;
     flex-direction: column;
@@ -36,6 +38,7 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: variables.$titleInverseColor;
+        padding-top: 160px;
 }
 
 .prodcuts__list-item-info{
@@ -47,9 +50,31 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: variables.$textInverseColor;
+        padding-left: 41px;
+        padding-right: 39px;
 }
 
 .products__list-item{
     background: variables.$backgroundFeatureLightColor;
         border-radius: 24px;
+}
+.ice-cream{
+    position: absolute;
+    margin-top: -140px;
+}
+
+.products__button{
+    border-radius: 100%;
+    color: white;
+    margin-top: 32px;
+    margin-bottom: 40px;
+}
+
+
+.products__list-item{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+
 }
