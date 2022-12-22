@@ -48,3 +48,8 @@
         letter-spacing: 0.04em;
         color: variables.$textInverseColor;
 }
+
+.products__list-item{
+    background: variables.$backgroundFeatureLightColor;
+        border-radius: 24px;
+}
