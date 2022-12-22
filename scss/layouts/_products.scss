@@ -1,0 +1,48 @@
+.products__title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products__title-claim{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: $titleSecondaryColor;
+}
+
+.products__title-main{
+    font-family: 'Titan One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 34px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: $titlePrimaryColor;
+}
+
+.products__list-item-title{
+    font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $titleInverseColor;
+}
+
+.prodcuts__list-item-info{
+    font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 152%;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: $textInverseColor;
+}
