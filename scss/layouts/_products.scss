@@ -1,3 +1,5 @@
+@use '../utils/variables';
+
 .products__title{
     display: flex;
     flex-direction: column;
@@ -11,7 +13,7 @@
     font-size: 18px;
     line-height: 21px;
     text-align: center;
-    color: $titleSecondaryColor;
+    color: variables.$titleSecondaryColor;
 }
 
 .products__title-main{
@@ -22,7 +24,7 @@
     line-height: 39px;
     text-align: center;
     letter-spacing: 0.04em;
-    color: $titlePrimaryColor;
+    color: variables.$titlePrimaryColor;
 }
 
 .products__list-item-title{
@@ -33,7 +35,7 @@
         line-height: 23px;
         text-align: center;
         letter-spacing: 0.04em;
-        color: $titleInverseColor;
+        color: variables.$titleInverseColor;
 }
 
 .prodcuts__list-item-info{
@@ -44,5 +46,5 @@
         line-height: 152%;
         text-align: center;
         letter-spacing: 0.04em;
-        color: $textInverseColor;
+        color: variables.$textInverseColor;
 }
