@@ -1,5 +1,10 @@
 @use '../utils/variables';
 
+.container{
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
 ul{list-style: none;}
 
 .products__title{
