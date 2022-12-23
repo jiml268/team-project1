@@ -16,6 +16,8 @@ ul{list-style: none;}
     line-height: 21px;
     text-align: center;
     color: variables.$titleSecondaryColor;
+    margin: 0;
+    padding-bottom: 15px;
 }
 
 .products__title-main{
@@ -27,6 +29,8 @@ ul{list-style: none;}
     text-align: center;
     letter-spacing: 0.04em;
     color: variables.$titlePrimaryColor;
+    margin: 0;
+    padding-bottom: 148px;
 }
 
 .products__list-item-title{
@@ -55,12 +59,23 @@ ul{list-style: none;}
 }
 
 .products__list-item{
-    background: variables.$backgroundFeatureLightColor;
         border-radius: 24px;
 }
+
+.products__list-item-icecream{
+    background: variables.$backgroundFeatureLightColor;
+}
+.products__list-item-icecoffee{
+    background: variables.$backgroundSecondProductColor;
+}
+.products__list-item-milkshakes{
+    background: variables.$backgroundThirdProductColor;
+}
+
 .ice-cream{
     position: absolute;
     margin-top: -140px;
+    margin-left: -135px;
 }
 
 .products__button{
@@ -68,6 +83,7 @@ ul{list-style: none;}
     color: white;
     margin-top: 32px;
     margin-bottom: 40px;
+    border-style: none;
 }
 
 
@@ -76,5 +92,9 @@ ul{list-style: none;}
     flex-direction: column;
     text-align: center;
     align-items: center;
+    margin-bottom: 140px;
 
+}
+.products__list{
+    padding:0;
 }
