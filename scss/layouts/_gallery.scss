@@ -1,0 +1,21 @@
+@import '../utils/variables';
+
+
+
+.gallery__container {
+    width: 320px;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.gallery__container {
+    display: grid;
+    gap: 2.5px;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: repeat(3, 1fr) masonry;
+    grid-auto-flow: dense;
+}
+
+.img__four {
+    grid-column: span 2;
+}
