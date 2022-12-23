@@ -9,6 +9,8 @@
 .container {
   margin-left: 20px;
   margin-right: 20px;
+  margin-top: 60px;
+  margin-bottom: 60px;
 }
 
 ul {
@@ -128,6 +130,10 @@ ul {
   .products__container {
     max-width: 768px;
     margin: 0 auto;
+    margin-right: 32px;
+    margin-left: 32px;
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
   .products__title-main {
     font-weight: 400;
@@ -173,5 +179,69 @@ ul {
   }
   .products__list-item-milkshakes {
     margin-bottom: 0;
+  }
+  .products__end-info {
+    display: none;
+  }
+}
+@media screen and (min-width: 830px) {
+  .products__container {
+    max-width: 768px;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .products__container {
+    max-width: 1200px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .products__title-claim {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+  }
+  .products__title-main {
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 66px;
+    letter-spacing: 0.06em;
+    margin-bottom: 281px;
+    padding: 0;
+  }
+  .products__list-item-title {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 34px;
+    letter-spacing: 0.04em;
+    padding-top: 165px;
+  }
+  .prodcuts__list-item-info {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 176%;
+    letter-spacing: 0.04em;
+    padding: 32px 63px 60px 64px;
+  }
+  .ice-cream {
+    margin-top: -250px;
+    margin-left: -185px;
+  }
+  .products__button {
+    margin-bottom: 60px;
+  }
+  .products__list-item-icecoffee {
+    margin-left: 32px;
+    margin-right: 32px;
+  }
+}
+@media screen and (min-width: 1233px) {
+  .products__container {
+    margin: 0 auto;
   }
 }
