@@ -1,8 +1,16 @@
 @use '../utils/variables';
 
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 .container{
-    padding-left: 20px;
-    padding-right: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 ul{list-style: none;}
@@ -102,4 +110,69 @@ ul{list-style: none;}
 }
 .products__list{
     padding:0;
+}
+
+.arrow-button{
+    margin: 15px;
+    fill: variables.$buttonAccentColor;
+}
+@media screen and (min-width:480px){
+    .products__container{
+        max-width: 440px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .products__container{
+        max-width: 768px;
+        margin: 0 auto;
+    }
+    .products__title-main{
+        font-weight: 400;
+        font-size: 48px;
+        line-height: 55px;
+        letter-spacing: 0.04em;
+    }
+    .products__title-claim{
+        font-weight: 400;
+        font-size: 26px;
+        line-height: 30px;
+    }
+    .products__list{
+        display: flex;
+        flex-direction: row;
+    }
+    .products__list-item-title{
+        padding-top: 118px;
+        padding-bottom: 32px;
+    }
+    .prodcuts__list-item-info{
+        padding: 32px;
+    }
+    .products__button{
+        margin: 0 0 40px 0;
+    }
+    .products__list-item-icecoffee{
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+    .ice-cream{
+        margin-top: -125px;
+        margin-left: -110px;
+    }
+    .products__list-item{
+        min-width: 224px;
+    }
+    .products__list-item-icecream{
+    margin-bottom: 0;
+    }
+    .products__list-item-icecoffee{
+    margin-bottom: 0;
+    }
+    .products__list-item-milkshakes{
+    margin-bottom: 0;
+    }
+
+
 }
