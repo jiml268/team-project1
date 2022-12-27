@@ -1,0 +1,25 @@
+.gallery__section{
+    width: 100%;
+    background: linear-gradient(#FFF5F6, 15%,  #E5E5E5);
+}
+.gallery__image{
+    width: 320px;
+    height: 136px;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 768px){
+    .gallery__image{
+        width: 768px;
+        height: 327px;
+    }
+}
+    
+@media screen and (min-width: 1200px){
+  
+    .gallery__image{
+        width: 1013px;
+        height: 430px;
+        margin: 0 auto;
+    }
+}
