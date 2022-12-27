@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/main.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="gallery__section">
+    <picture>
+
+         <source srcset="./images/gallery-image-tablet.png 1x, ./images/gallery-image-tablet-2x.png 2x" 
+         media="(min-width: 768px)" width="224" height="224"
+         />
+         <source srcset="./images/gallery-image-mobile.png 1x, ./images/gallery-image-mobile-2x.png 2x" 
+         media="(min-width: 320px)" width="320" height="320"
+         />
+        <img class="gallery__image" src="./images/gallery-image-tablet.png" alt="photo gallery" width="320" height="136"/>
+      </picture >
+    </section>
+</body>
+</html>
