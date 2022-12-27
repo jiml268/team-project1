@@ -1,0 +1,163 @@
+@use './utils/variables' as *;
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+.header {
+    &__container {
+        height: 502px;
+        background-color: $backgroundFeatureLightColor;
+    }
+}
+
+.headerNav {
+    display: flex;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+
+    &__logo--mobile {
+        width: 200px;
+        height: 50px;
+        margin-left: 20px;
+    }
+
+    &__list {
+        display: none;
+    }
+
+    &__menuButton {
+        margin-right: 20px;
+        border: none;
+        background: none;
+        cursor: pointer;
+    }
+
+    &__buyButton {
+        display: none;
+    }
+}
+
+.hero {
+    position: relative;
+    display: flex;
+
+
+    &__imageCone {
+        width: 346px;
+        height: 344px;
+        background-color: $backgroundFeatureBaseColor;
+        border-radius: 50%;
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        top: 18px;
+        right: -62px;
+        z-index: 10;
+
+        &--mobile {
+            width: 171px;
+            height: 410px;
+            margin-top: 9px;
+        }
+
+        &--tablet {
+            display: none;
+        }
+
+        &--desktop {
+            display: none;
+        }
+    }
+
+    &__title {
+        width: 218px;
+        font-family: 'Titan One';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 26px;
+        line-height: calc(30/26);
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
+        color: $titleInverseColor;
+        margin-top: 110px;
+        margin-left: 20px;
+        position: relative;
+        z-index: 20;
+    }
+
+    &__span {
+        color: $titlePrimaryColor;
+        font-size: 46px;
+    }
+
+    &__buttonList {
+        display: flex;
+        margin-left: 10px;
+        margin-top: 20px;
+    }
+
+
+    &__button {
+        text-decoration: none;
+        font-family: 'DM Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 8px;
+        line-height: calc(10/8);
+        width: 62px;
+        height: 24px;
+        border-radius: 20px;
+        margin-left: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: none;
+        cursor: pointer;
+        position: relative;
+        z-index: 20;
+
+
+        &--odd {
+            background: $buttonAccentColor;
+            color: $textInverseColor;
+
+            &:focus,
+            &:hover {
+                background: $buttonNeutralColor;
+                color: $textAccentColor;
+            }
+        }
+
+        &--even {
+            background: $buttonInverseColor;
+            color: $textAccentColor;
+        }
+
+
+    }
+
+}
+
+.heroHype {
+    &__list {
+        display: none;
+    }
+}
+
+.heroMilk {
+    display: none;
+}
+
+.heroTasty {
+    display: none;
+}
