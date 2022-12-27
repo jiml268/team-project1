@@ -1,0 +1,87 @@
+@use "./utils/variables";
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap");
+
+body {
+    margin: 0;
+}
+
+html {
+    box-sizing: border-box;
+}
+.list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.advantages-section {
+    padding: 40px 0 87px 20px;
+    background-color: variables.$backgroundNeutralColor;
+    .advantages__hidden-header {
+        display: none;
+    }
+    .advantages__list {
+        width: 230px;
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+    .advantages__header {
+        font: 400 36px/68px "Titan One";
+        color: variables.$iconAccentColor;
+    }
+    .advantages-icon {
+        margin-bottom: 16px;
+        fill: variables.$titleSecondaryColor;
+    }
+    .advantages-icon--heart {
+        stroke-width: 0.5px;
+        stroke: variables.$titleSecondaryColor;
+    }
+    .advantages__text {
+        font: 700 12px/20px "DM Sans";
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .advantages-section {
+        .advantages-icon {
+            margin-bottom: 32px;
+        }
+        .advantages__list {
+            width: auto;
+            flex-direction: row;
+            gap: 0px;
+        }
+        .advantages__list-item {
+            max-width: 180px;
+        }
+        .advantages__header {
+            font: 400 48px/56px "Titan One";
+        }
+        .advantages__text {
+            font: 700 14px/24px "DM Sans";
+            margin-top: 13px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .advantages-section {
+        .advantages-icon {
+            margin-bottom: 40px;
+        }
+        .advantages__list {
+            gap: 80px;
+        }
+        .advantages__list-item {
+            max-width: 317px;
+        }
+        .advantages__header {
+            font-size: 58px;
+        }
+        .advantages__text {
+            font: 700 16px/28px "DM Sans";
+            font-size: 16px;
+            margin-top: 16px;
+        }
+    }
+}
