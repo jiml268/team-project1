@@ -19,7 +19,7 @@
                     <a href="#" class="headerNav__link">About us</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#about" class="headerNav__link">How it's made?</a>
+                    <a href="#aboutanchor" class="headerNav__link">How it's made?</a>
                 </li>
                 <li class="headerNav__item">
                     <a href="#products" class="headerNav__link">Our products</a>
@@ -28,58 +28,6 @@
                     <a href="#" class="headerNav__link">Contact</a>
                 </li>
             </ul>
-
-
-            <!-- There is no js requirement, however this is the js from the hw08 project.
-
-    3 classses need to be added to the html
-        .js-menu-container added to the modal container (somebody else's html)
-        .js-open-menu added to the button that currently has a class of header__menuButton, in addition to that class
-        .js-close-menu added to the button that closes the modal (somebody else's html)
-
-    and this needs to be added to the SCSS file for the modal container, the transition can be changed to whatever, this does a slide on the x-axis
-        (class name for the modal container) {
-            transform: translateX(100%);
-            transition: transform 250ms ease-in-out;
-            &.is-open {
-                transform: translateX(0);
-            }   
-        }
-
-the following is the js to be put in a js folder and <script src=""></script> at the end of the html
-
-    (() => {
-  const mobileMenu = document.querySelector('.js-menu-container');
-  const openMenuBtn = document.querySelector('.js-open-menu');
-  const closeMenuBtn = document.querySelector('.js-close-menu');
-
-  const toggleMenu = () => {
-    const isMenuOpen =
-      openMenuBtn.getAttribute('aria-expanded') === 'true' || false;
-    openMenuBtn.setAttribute('aria-expanded', !isMenuOpen);
-    mobileMenu.classList.toggle('is-open');
-
-    const scrollLockMethod = !isMenuOpen
-      ? 'disableBodyScroll'
-      : 'enableBodyScroll';
-    bodyScrollLock[scrollLockMethod](document.body);
-  };
-
-  openMenuBtn.addEventListener('click', toggleMenu);
-  closeMenuBtn.addEventListener('click', toggleMenu);
-
-  // Close the mobile menu on wider screens if the device orientation changes
-  window.matchMedia('(min-width: 768px)').addEventListener('change', e => {
-    if (!e.matches) return;
-    mobileMenu.classList.remove('is-open');
-    openMenuBtn.setAttribute('aria-expanded', false);
-    bodyScrollLock.enableBodyScroll(document.body);
-  });
-})(); 
-
-
--->
-
             <button class="headerNav__menuButton js-open-menu" type="button">
                 <svg width="20" height="12" class="header__menuIcon">
                     <use href="images/sprite.svg#icon-burger"></use>
@@ -124,7 +72,7 @@ the following is the js to be put in a js folder and <script src=""></script> at
                         <button type="button" href="#products" class="hero__button hero__button--odd">Products</button>
                     </li>
                     <li class="hero__buttonItem">
-                        <button type="button" href="#about" class="hero__button hero__button--even">How it's made</button>
+                        <button type="button" href="#aboutanchor" class="hero__button hero__button--even">How it's made</button>
                     </li>
                 </ul>
                 <ul class="heroHype__list">
@@ -171,3 +119,42 @@ the following is the js to be put in a js folder and <script src=""></script> at
         </div>
     </div>
 </header>
+
+<!-- NavModal Section -->
+
+<section class="navModal js-menu-container">
+    <div class="navModal__container">
+        <button class="navModal__closeButton js-close-menu">
+            <svg class="navModal__closeIcon" width="14" height="14">
+                <use href="./images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <button type="button" class="navModal__buyButton js-close-menu">
+            <span class="navModal__span">Buy now</span>
+            <svg width="7" height="14" class="navModal__chevron">
+                <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+        </button>
+        
+        <!-- Verify correct anchor tags -->
+        
+        <ul class="navModal__list">
+            <li class="navModal__item">
+                <a href="" class="navModal__link">Home</a>
+            </li>
+            <li class="navModal__item">
+                <a href="#" class="navModal__link">About us</a>
+            </li>
+            <li class="navModal__item">
+                <a href="#aboutanchor" class="navModal__link">How it's made?</a>
+            </li>
+            <li class="navModal__item">
+                <a href="#products" class="navModal__link">Our products</a>
+            </li>
+            <li class="navModal__item">
+                <a href="#" class="navModal__link">Contact</a>
+            </li>
+        </ul>
+    </div>
+</section>
+<script src="./navmodal.js"></script>
