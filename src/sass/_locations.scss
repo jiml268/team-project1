@@ -1,0 +1,383 @@
+@use './utils/variables';
+
+ul {
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+
+.locations {
+    background: linear-gradient(to bottom,
+            variables.$backgroundInverseColor 21%,
+            variables.$backgroundNeutralColor 21%,
+            variables.$backgroundNeutralColor 75%);
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.locations__conatiner {
+    margin: 60px 20px 32px 20px;
+}
+
+.locations__info {
+    background: variables.$backgroundInverseColor;
+    box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+    border-radius: 24px;
+    padding: 40px 32px;
+    max-width: 280px;
+    margin-bottom: 20px;
+}
+
+
+
+.locations__type-cafe {
+    background: variables.$backgroundSecondProductColor;
+    border-radius: 4px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.04em;
+    color: variables.$buttonInverseColor;
+    width: 80px;
+    height: 16px;
+    padding: 4px 24px 4px 24px;
+    margin: 0;
+}
+
+.locations__type-foodtruck {
+    background: variables.$backgroundThirdProductColor;
+    border-radius: 4px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: variables.$buttonInverseColor;
+    width: 130px;
+    height: 16px;
+    padding: 4px 27px 4px 27px;
+    margin: 0;
+}
+
+.locations__city {
+    margin: 20px 0 8px 0;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    letter-spacing: 0.04em;
+    color: variables.$textPrimaryColor;
+}
+
+.locations__text {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    padding-bottom: 24px;
+    color: variables.$textSecondaryColor;
+    width: 160px;
+    margin: 0;
+}
+
+
+.locations__weekdays {
+    border-top: 1px solid variables.$backgroundLightColor;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textPrimaryColor;
+    padding-top: 24px;
+}
+
+.locations__weekdays-times {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textTertiaryColor;
+    padding-bottom: 8px;
+}
+
+.locations__weekends {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textPrimaryColor;
+}
+
+.locations__weekends-times {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 186%;
+    color: variables.$textTertiaryColor;
+    padding-bottom: 24px;
+    border-bottom: 1px solid variables.$backgroundLightColor;
+    margin-bottom: 24px;
+}
+
+.locations__contact-item {
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.locations__contact-item-link {
+    color: variables.$textSecondaryColor;
+}
+
+.locations__button-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.locations__button-our {
+    background: variables.$textAccentColor;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: variables.$backgroundInverseColor;
+    margin-bottom: 10px;
+    padding: 10px 20px 10px 17px;
+    border-style: none;
+}
+
+.locations__button-franchise {
+    background: variables.$backgroundInverseColor;
+    border-radius: 22px;
+    font-family: 'DM Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: variables.$textAccentColor;
+    margin-bottom: 10px;
+    padding: 10px 40px 10px 32px;
+    border-style: none;
+}
+
+.send-icon-our {
+    fill: variables.$buttonInverseColor;
+    margin-left: 8px;
+
+}
+
+.send-icon-franchise {
+    fill: variables.$textAccentColor;
+    margin-left: 8px;
+
+}
+
+
+@media screen and (min-width:768px) {
+    .locations {
+        background: linear-gradient(to bottom,
+                variables.$backgroundInverseColor 45%,
+                variables.$backgroundNeutralColor 45%,
+                variables.$backgroundNeutralColor 50%);
+    }
+
+    .locations__conatiner {
+        margin: 80px 16px 60px 16px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .locations__info {
+        max-width: 224px;
+        margin: 0;
+    }
+
+    .locations__info:not(:last-child) {
+        margin: 0 32px 0 0;
+    }
+
+    .locations__type-cafe {
+        font-size: 16px;
+        padding: 10px 0px 10px 15px;
+        width: 73px;
+        height: 28px;
+    }
+
+    .locations__type-foodtruck {
+        font-size: 16px;
+        width: 138px;
+        height: 28px;
+        padding: 10px 0px 10px 15px;
+
+    }
+
+    .locations__city {
+        font-size: 14px;
+        margin-top: 32px;
+        margin-bottom: 12px;
+    }
+
+    .locations__text {
+        width: 140px;
+        font-size: 14px;
+        padding-bottom: 32px;
+    }
+
+    .locations__weekdays {
+        font-size: 14px;
+        padding-top: 32px;
+    }
+
+    .locations__weekdays-times {
+        font-size: 14px;
+        padding-bottom: 12px;
+    }
+
+    .locations__weekends {
+        font-size: 14px;
+    }
+
+    .locations__weekends-times {
+        font-size: 14px;
+        padding-bottom: 32px;
+        margin-bottom: 32px;
+    }
+
+    .locations__contact-item {
+        font-size: 14px;
+    }
+
+    .locations__button-section {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .locations__button-our {
+        margin: 0 0 40px 0;
+        padding: 15px 40px 15px 30px;
+    }
+
+    .locations__button-franchise {
+        margin: 0 0 40px 14px;
+        padding: 15px 42px 15px 38px;
+    }
+
+    .send-icon-our {
+        margin-left: 14px;
+    }
+
+    .send-icon-franchise {
+        margin-left: 14px;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .locations {
+        background: linear-gradient(to bottom,
+                variables.$backgroundInverseColor 15%,
+                variables.$backgroundNeutralColor 15%,
+                variables.$backgroundNeutralColor 85%);
+    }
+
+    .locations__conatiner {
+        margin: 120px 16px 60px 16px;
+    }
+
+    .locations__info {
+        min-width: 368px;
+
+        padding: 40px;
+    }
+
+    .locations__info-truck {
+        margin: 0;
+    }
+
+    .locations__text {
+        width: 210px;
+        font-size: 16px;
+    }
+
+    .locations__city {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+
+    .locations__weekdays {
+        font-size: 16px;
+
+    }
+
+    .locations__weekdays-times {
+        font-size: 16px;
+
+    }
+
+    .locations__weekends {
+        font-size: 16px;
+    }
+
+    .locations__weekends-times {
+        font-size: 16px;
+
+    }
+
+    .locations__contact-item {
+        font-size: 16px;
+    }
+
+    .locations__button-our {
+        padding-left: 35px;
+    }
+
+    .locations__button-franchise {
+        padding-left: 36px;
+    }
+}
