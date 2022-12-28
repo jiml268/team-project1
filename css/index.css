@@ -1,4 +1,141 @@
 @import '~node_modules/modern-normalize/modern-normalize.css';
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@700&family=Titan+One&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+.header__container {
+  height: 502px;
+  background-color: #FFB8CA;
+}
+
+.headerNav {
+  display: flex;
+  height: 64px;
+  align-items: center;
+  justify-content: space-between;
+}
+.headerNav__logo--mobile {
+  width: 200px;
+  height: 50px;
+  margin-left: 20px;
+}
+.headerNav__list {
+  display: none;
+}
+.headerNav__menuButton {
+  margin-right: 20px;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.headerNav__buyButton {
+  display: none;
+}
+
+.hero {
+  position: relative;
+  display: flex;
+}
+.hero__imageCone {
+  width: 346px;
+  height: 344px;
+  background-color: #FFA5BA;
+  border-radius: 50%;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 18px;
+  right: -62px;
+  z-index: 10;
+}
+.hero__imageCone--mobile {
+  width: 171px;
+  height: 410px;
+  margin-top: 9px;
+}
+.hero__imageCone--tablet {
+  display: none;
+}
+.hero__imageCone--desktop {
+  display: none;
+}
+.hero__title {
+  width: 218px;
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 1.1538461538;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #FFF;
+  margin-top: 110px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 20;
+}
+.hero__span {
+  color: #D41443;
+  font-size: 46px;
+}
+.hero__buttonList {
+  display: flex;
+  margin-left: 10px;
+  margin-top: 20px;
+}
+.hero__button {
+  text-decoration: none;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 8px;
+  line-height: 1.25;
+  width: 62px;
+  height: 24px;
+  border-radius: 20px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+  position: relative;
+  z-index: 20;
+}
+.hero__button--odd {
+  background: #D41443;
+  color: #FFF;
+}
+.hero__button--odd:focus, .hero__button--odd:hover {
+  background: #ECEBEB;
+  color: #D41443;
+}
+.hero__button--even {
+  background: #FFF;
+  color: #D41443;
+}
+
+.heroHype__list {
+  display: none;
+}
+
+.heroMilk {
+  display: none;
+}
+
+.heroTasty {
+  display: none;
+}
+
 *,
 *::before,
 *::after {
@@ -483,5 +620,112 @@ img {
     line-height: 1.301875;
     margin-top: 40px;
     margin-bottom: 60px;
+  }
+}
+
+body {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.advantages-section {
+  padding: 40px 0 87px 20px;
+  background-color: #FFF5F6;
+}
+.advantages-section .advantages__hidden-header {
+  display: none;
+}
+.advantages-section .advantages__list {
+  width: 230px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.advantages-section .advantages__header {
+  font: 400 36px/68px "Titan One";
+  color: #D41443;
+}
+.advantages-section .advantages-icon {
+  margin-bottom: 16px;
+  fill: #FFA5BA;
+}
+.advantages-section .advantages-icon--heart {
+  stroke-width: 0.5px;
+  stroke: #FFA5BA;
+}
+.advantages-section .advantages__text {
+  font: 700 12px/20px "DM Sans";
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-section .advantages-icon {
+    margin-bottom: 32px;
+  }
+  .advantages-section .advantages__list {
+    width: auto;
+    flex-direction: row;
+    gap: 0px;
+  }
+  .advantages-section .advantages__list-item {
+    max-width: 180px;
+  }
+  .advantages-section .advantages__header {
+    font: 400 48px/56px "Titan One";
+  }
+  .advantages-section .advantages__text {
+    font: 700 14px/24px "DM Sans";
+    margin-top: 13px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .advantages-section .advantages-icon {
+    margin-bottom: 40px;
+  }
+  .advantages-section .advantages__list {
+    gap: 80px;
+  }
+  .advantages-section .advantages__list-item {
+    max-width: 317px;
+  }
+  .advantages-section .advantages__header {
+    font-size: 58px;
+  }
+  .advantages-section .advantages__text {
+    font: 700 16px/28px "DM Sans";
+    font-size: 16px;
+    margin-top: 16px;
+  }
+}
+.gallery__section {
+  width: 100%;
+  background: linear-gradient(#FFF5F6, 15%, #E5E5E5);
+}
+
+.gallery__image {
+  width: 320px;
+  height: 136px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .gallery__image {
+    width: 768px;
+    height: 327px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__image {
+    width: 1013px;
+    height: 430px;
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=index.css.map */
