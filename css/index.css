@@ -1227,251 +1227,334 @@ html {
     margin: 0 auto;
   }
 }
+ul {
+  list-style: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
 *,
 *::before,
 *::after {
   box-sizing: border-box;
-  margin: 0;
+  margin: 0 auto;
+}
+
+.locations {
+  background: linear-gradient(to bottom, #FFF 21%, #FFF5F6 21%, #FFF5F6 75%);
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
-.products__container {
-  margin-left: 20px;
-  margin-right: 20px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+.locations__conatiner {
+  margin: 60px 20px 32px 20px;
 }
 
-ul {
-  list-style: none;
+.locations__info {
+  background: #FFF;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  padding: 40px 32px;
+  max-width: 280px;
+  margin-bottom: 20px;
 }
 
-.products__title {
+.locations__type-cafe {
+  background: #F0D1A5;
+  border-radius: 4px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.04em;
+  color: #FFF;
+  width: 80px;
+  height: 16px;
+  padding: 4px 24px 4px 24px;
+  margin: 0;
+}
+
+.locations__type-foodtruck {
+  background: #C2E297;
+  border-radius: 4px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #FFF;
+  width: 130px;
+  height: 16px;
+  padding: 4px 27px 4px 27px;
+  margin: 0;
+}
+
+.locations__city {
+  margin: 20px 0 8px 0;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  letter-spacing: 0.04em;
+  color: #000;
+}
+
+.locations__text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  padding-bottom: 24px;
+  color: #907E82;
+  width: 160px;
+  margin: 0;
+}
+
+.locations__weekdays {
+  border-top: 1px solid #E5E5E5;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000;
+  padding-top: 24px;
+}
+
+.locations__weekdays-times {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #FFA5BA;
+  padding-bottom: 8px;
+}
+
+.locations__weekends {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #000;
+}
+
+.locations__weekends-times {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 186%;
+  color: #FFA5BA;
+  padding-bottom: 24px;
+  border-bottom: 1px solid #E5E5E5;
+  margin-bottom: 24px;
+}
+
+.locations__contact-item {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.locations__contact-item-link {
+  color: #907E82;
+}
+
+.locations__button-section {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.products__title-claim {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 21px;
-  text-align: center;
-  color: #FFA5BA;
-  margin: 0;
-  padding-bottom: 15px;
-}
-
-.products__title-main {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 34px;
-  line-height: 39px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #D41443;
-  margin: 0;
-  padding-bottom: 148px;
-}
-
-.products__list-item-title {
-  font-family: "Titan One";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 23px;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #FFF;
-  padding-top: 160px;
-}
-
-.prodcuts__list-item-info {
+.locations__button-our {
+  background: #D41443;
+  border-radius: 22px;
   font-family: "DM Sans";
   font-style: normal;
   font-weight: 700;
-  font-size: 14px;
-  line-height: 152%;
+  font-size: 16px;
+  line-height: 21px;
+  display: flex;
+  align-items: center;
   text-align: center;
-  letter-spacing: 0.04em;
   color: #FFF;
-  padding-left: 41px;
-  padding-right: 39px;
-}
-
-.products__list-item {
-  border-radius: 24px;
-}
-
-.products__list-item-icecream {
-  background: #FFB8CA;
-}
-
-.products__list-item-icecoffee {
-  background: #F0D1A5;
-}
-
-.products__list-item-milkshakes {
-  background: #C2E297;
-}
-
-.ice-cream {
-  position: absolute;
-  margin-top: -140px;
-  margin-left: -135px;
-}
-
-.products__button {
-  border-radius: 100%;
-  color: white;
-  margin-top: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 10px;
+  padding: 10px 20px 10px 17px;
   border-style: none;
 }
 
-.products__list-item {
+.locations__button-franchise {
+  background: #FFF;
+  border-radius: 22px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   display: flex;
-  flex-direction: column;
-  text-align: center;
   align-items: center;
-  margin-bottom: 140px;
+  text-align: center;
+  color: #D41443;
+  margin-bottom: 10px;
+  padding: 10px 40px 10px 32px;
+  border-style: none;
 }
 
-.products__list {
-  padding: 0;
+.send-icon-our {
+  fill: #FFF;
+  margin-left: 8px;
 }
 
-.arrow-button {
-  margin: 15px;
+.send-icon-franchise {
   fill: #D41443;
+  margin-left: 8px;
 }
 
-@media screen and (min-width: 480px) {
-  .products__container {
-    max-width: 440px;
-    margin: 0 auto;
-  }
-}
 @media screen and (min-width: 768px) {
-  .products__container {
-    max-width: 768px;
-    margin: 0 auto;
-    margin-right: 32px;
-    margin-left: 32px;
-    margin-top: 60px;
-    margin-bottom: 60px;
+  .locations {
+    background: linear-gradient(to bottom, #FFF 45%, #FFF5F6 45%, #FFF5F6 50%);
   }
-  .products__title-main {
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.04em;
-  }
-  .products__title-claim {
-    font-weight: 400;
-    font-size: 26px;
-    line-height: 30px;
-  }
-  .products__list {
+  .locations__conatiner {
+    margin: 80px 16px 60px 16px;
     display: flex;
-    flex-direction: row;
+    justify-content: center;
   }
-  .products__list-item-title {
-    padding-top: 118px;
+  .locations__info {
+    max-width: 224px;
+    margin: 0;
+  }
+  .locations__info:not(:last-child) {
+    margin: 0 32px 0 0;
+  }
+  .locations__type-cafe {
+    font-size: 16px;
+    padding: 10px 0px 10px 15px;
+    width: 73px;
+    height: 28px;
+  }
+  .locations__type-foodtruck {
+    font-size: 16px;
+    width: 138px;
+    height: 28px;
+    padding: 10px 0px 10px 15px;
+  }
+  .locations__city {
+    font-size: 14px;
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+  .locations__text {
+    width: 140px;
+    font-size: 14px;
     padding-bottom: 32px;
   }
-  .prodcuts__list-item-info {
-    padding: 32px;
+  .locations__weekdays {
+    font-size: 14px;
+    padding-top: 32px;
   }
-  .products__button {
+  .locations__weekdays-times {
+    font-size: 14px;
+    padding-bottom: 12px;
+  }
+  .locations__weekends {
+    font-size: 14px;
+  }
+  .locations__weekends-times {
+    font-size: 14px;
+    padding-bottom: 32px;
+    margin-bottom: 32px;
+  }
+  .locations__contact-item {
+    font-size: 14px;
+  }
+  .locations__button-section {
+    flex-direction: row;
+    justify-content: center;
+  }
+  .locations__button-our {
     margin: 0 0 40px 0;
+    padding: 15px 40px 15px 30px;
   }
-  .products__list-item-icecoffee {
-    margin-left: 15px;
-    margin-right: 15px;
+  .locations__button-franchise {
+    margin: 0 0 40px 14px;
+    padding: 15px 42px 15px 38px;
   }
-  .ice-cream {
-    margin-top: -125px;
-    margin-left: -110px;
+  .send-icon-our {
+    margin-left: 14px;
   }
-  .products__list-item {
-    min-width: 224px;
-  }
-  .products__list-item-icecream {
-    margin-bottom: 0;
-  }
-  .products__list-item-icecoffee {
-    margin-bottom: 0;
-  }
-  .products__list-item-milkshakes {
-    margin-bottom: 0;
-  }
-  .products__end-info {
-    display: none;
+  .send-icon-franchise {
+    margin-left: 14px;
   }
 }
-@media screen and (min-width: 830px) {
-  .products__container {
-    max-width: 768px;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: 60px;
+@media screen and (min-width: 1280px) {
+  .locations {
+    background: linear-gradient(to bottom, #FFF 15%, #FFF5F6 15%, #FFF5F6 85%);
   }
-}
-@media screen and (min-width: 1200px) {
-  .products__container {
-    max-width: 1200px;
-    margin-top: 60px;
-    margin-bottom: 60px;
-    margin-left: 16px;
-    margin-right: 16px;
+  .locations__conatiner {
+    margin: 120px 16px 60px 16px;
   }
-  .products__title-claim {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0.04em;
+  .locations__info {
+    min-width: 368px;
+    padding: 40px;
   }
-  .products__title-main {
-    font-weight: 400;
-    font-size: 58px;
-    line-height: 66px;
-    letter-spacing: 0.06em;
-    margin-bottom: 281px;
-    padding: 0;
+  .locations__info-truck {
+    margin: 0;
   }
-  .products__list-item-title {
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 34px;
-    letter-spacing: 0.04em;
-    padding-top: 164px;
-  }
-  .prodcuts__list-item-info {
-    font-weight: 700;
+  .locations__text {
+    width: 210px;
     font-size: 16px;
-    line-height: 176%;
-    letter-spacing: 0.04em;
-    padding: 32px 63px 60px 64px;
   }
-  .ice-cream {
-    margin-top: -250px;
-    margin-left: -185px;
+  .locations__city {
+    font-size: 16px;
+    margin-bottom: 8px;
   }
-  .products__button {
-    margin-bottom: 60px;
+  .locations__weekdays {
+    font-size: 16px;
   }
-  .products__list-item-icecoffee {
-    margin-left: 32px;
-    margin-right: 32px;
+  .locations__weekdays-times {
+    font-size: 16px;
   }
-}
-@media screen and (min-width: 1233px) {
-  .products__container {
-    margin: 0 auto;
+  .locations__weekends {
+    font-size: 16px;
+  }
+  .locations__weekends-times {
+    font-size: 16px;
+  }
+  .locations__contact-item {
+    font-size: 16px;
+  }
+  .locations__button-our {
+    padding-left: 35px;
+  }
+  .locations__button-franchise {
+    padding-left: 36px;
   }
 }
 .container {
