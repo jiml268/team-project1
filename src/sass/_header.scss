@@ -14,7 +14,7 @@ ul {
 
 .header {
     background-color: $backgroundFeatureLightColor;
-        overflow-x: hidden;
+        overflow: hidden;
         
     &__container {
         margin: 0 auto;
@@ -131,6 +131,10 @@ ul {
             margin-left: 32px;
             cursor: pointer;
             font-family: 'DM Sans';
+            &:focus,
+            &:hover {
+                background: $buttonNeutralColor;
+            }
         }
         
         @media screen and (min-width: 1280px) {
@@ -513,12 +517,112 @@ ul {
             display: none;
             @media screen and (min-width: 1280px) {
                 display: block;
-                width: 304px;
-                height: 241px;
                 position: absolute;
                 left: 864px;
                 bottom: -60px;
             }
+        }
+    }
+}
+
+.navModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 98;
+    background-color: rgba(0, 0, 0, 0.4);
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+    display: flex; 
+    justify-content: flex-end;
+    
+    
+    &.is-open {
+        transform: translateX(0);
+    }
+    
+    &__container {
+        background-color: $backgroundFeatureDarkColor;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 99;
+        width: 100vw;
+        @media screen and (min-width: 320px) {
+            max-width: 320px;
+        }
+
+    }
+    &__closeButton {
+        width: 34px;
+        height: 34px;
+        border-radius: 50%;
+        border: none;
+        cursor: pointer;
+        background-color: inherit;
+        align-self: flex-end;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 10px 10px 0 0;
+    }    
+
+    &__buyButton {
+        width: 209px;
+        height: 44px;
+        background: $buttonInverseColor;
+        border: none;
+        border-radius: 22px;
+        color: $textAccentColor;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: calc(21/16);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 11px 20px 0;
+        cursor: pointer;
+        font-family: 'DM Sans';
+        &:focus,
+        &:hover {
+            background: $buttonNeutralColor;
+        }
+    }
+    &__span {
+        height: 24px;
+        display: flex;
+    }
+
+    &__chevron {
+        margin-left: 10px;
+    }
+
+    &__list {
+        margin-top: 19px;
+    }
+
+    &__item {
+        border-top: 1px solid #E18298;
+        display: flex;
+        &:last-child {
+            border-bottom: 1px solid #E18298;
+        }
+    }
+
+    &__link {
+        font-family: 'DM Sans';
+        font-weight: 700;
+        font-size: 14px;
+        line-height: calc(18/14);
+        color: $textInverseColor;
+        text-decoration: none;
+        padding: 12px 0 12px 20px;
+        width: 100%;
+        &:hover,
+        &:focus {
+            color: $textAccentColor;
         }
     }
 }
