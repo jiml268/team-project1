@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"main.min.css"}
+{"version":3,"sourceRoot":"","sources":["../scss/layouts/_products.scss"],"names":[],"mappings":"AAAA,iBACI,aACA,sBACA,mBAGJ,uBACI,wBACA,kBACA,gBACA,eACA,iBACA,kBACA,yBACA","file":"main.min.css"}
