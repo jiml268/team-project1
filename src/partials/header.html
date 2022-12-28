@@ -5,27 +5,27 @@
 <header class="header" id="home">
     <div class="header__container">
         <div class="headerNav">
-            <img class="headerNav__logo--mobile"
+            <img class="headerNav__logo"
                 srcset="images/header-logo-mobile.png 1x, images/header-logo-mobile-2x.png 2x"
                 src="images/header-logo-mobile.png" alt="Logo">
             <ul class="headerNav__list">
                 <li class="headerNav__item ">
-                    <a href="#" class="headerNav__link headerNav__link--current">Home</a>
+                    <a href="#" class="headerNav__link">Home</a>
                 </li>
 
                 <!-- the next 4 href need section anchor verification -->
 
                 <li class="headerNav__item">
-                    <a href="#about" class="headerNav__link">About us</a>
+                    <a href="#" class="headerNav__link">About us</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#howItsMade" class="headerNav__link">How it's made?</a>
+                    <a href="#about" class="headerNav__link">How it's made?</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#ourProducts" class="headerNav__link">Our products</a>
+                    <a href="#products" class="headerNav__link">Our products</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#contact" class="headerNav__link">Contact</a>
+                    <a href="#" class="headerNav__link">Contact</a>
                 </li>
             </ul>
 
@@ -86,7 +86,10 @@ the following is the js to be put in a js folder and <script src=""></script> at
                 </svg>
             </button>
             <button type="button" class="headerNav__buyButton">
-                <span class="header__buyText">Buy now ></span>
+                <span class="headerNav__span">Buy now</span>
+                <svg width="7" height="14" class="headerNav__chevron">
+                    <use href="images/sprite.svg#icon-chevron"></use>
+                </svg>
             </button>
         </div>
 
@@ -112,16 +115,16 @@ the following is the js to be put in a js folder and <script src=""></script> at
                 <div class="hero__title">
                     Ice cream made with
                     <span class="hero__span">Passion</span>
-                </div>
+                
                 <ul class="hero__buttonList">
                     <li class="hero__buttonItem">
 
                         <!-- check to make sure the href id is correct to the products anchor id and the How it's made anchor id-->
 
-                        <button type="button" class="hero__button hero__button--odd">Products</button>
+                        <button type="button" href="#products" class="hero__button hero__button--odd">Products</button>
                     </li>
                     <li class="hero__buttonItem">
-                        <button type="button" class="hero__button hero__button--even">How it's made</button>
+                        <button type="button" href="#about" class="hero__button hero__button--even">How it's made</button>
                     </li>
                 </ul>
                 <ul class="heroHype__list">
@@ -143,16 +146,18 @@ the following is the js to be put in a js folder and <script src=""></script> at
                     <img class="heroMilk__img--desk"
                         srcset="images/hero-milk-picture-desk.png 1x, images/hero-milk-picture-desk-2x.png 2x"
                         src="images/hero-milk-picture-desk.png" alt="milk">
-                    <span class="heroMilk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                        tempor incididunt ut labore et</span>
-
-                    <!-- Icon-arrow-right svg? -->
-
-                    <button type="button" class="heroMilk__button">
-                        <svg width="26" height="26" class="herMilk__icon">
-                            <use href="images/sprite.svg#icon-arrow-right"></use>
-                        </svg>
-                    </button>
+                    <div class="heroMilk__flexainer">
+                        <span class="heroMilk__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                            tempor incididunt ut labore et</span>
+                        <button type="button" class="heroMilk__button">
+                            <svg width="7" height="7" class="heroMilk__icon--tablet">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                            <svg width="11" height="11" class="heroMilk__icon--desk">
+                                <use href="images/sprite.svg#icon-arrow-right"></use>
+                            </svg>
+                        </button>
+                    </div>                        
                 </div>
                 <div class="heroTasty">
                     <img class="heroTasty__image--tablet"
