@@ -1205,7 +1205,7 @@ html {
 }
 .gallery__section {
   width: 100%;
-  background: linear-gradient(#FFF5F6, 15%, #E5E5E5);
+  background-image: linear-gradient(to bottom, #FFF5F6 15%, #FFF5F6 15%, #FFFFFF 70%);
 }
 
 .gallery__image {
@@ -1728,4 +1728,4 @@ a {
     margin-left: 462px;
     padding-top: 7px;
   }
-}
+}/*# sourceMappingURL=index.css.map */
