@@ -2,7 +2,7 @@
 
 <!-- id="home" verify correct term for usage and is this redundant because other anchor tags can just target #top to do the same since this section is the top of the page? -->
 
-<header class="header" id="home">
+<header class="header" id="homeAnchor">
     <div class="header__container">
         <div class="headerNav">
             <img class="headerNav__logo"
@@ -12,17 +12,14 @@
                 <li class="headerNav__item ">
                     <a href="#" class="headerNav__link">Home</a>
                 </li>
-
-                <!-- the next 4 href need section anchor verification -->
-
                 <li class="headerNav__item">
                     <a href="#" class="headerNav__link">About us</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#aboutanchor" class="headerNav__link">How it's made?</a>
+                    <a href="#aboutAnchor" class="headerNav__link">How it's made?</a>
                 </li>
                 <li class="headerNav__item">
-                    <a href="#products" class="headerNav__link">Our products</a>
+                    <a href="#productsAnchor" class="headerNav__link">Our products</a>
                 </li>
                 <li class="headerNav__item">
                     <a href="#" class="headerNav__link">Contact</a>
@@ -41,11 +38,7 @@
             </button>
         </div>
 
-        <!-- Mobile Modal section -->
-
-
-
-        <!-- Header Hero section -->
+<!-- Header Hero section -->
 
         <div class="hero">
             <div class="hero__container">
@@ -63,16 +56,12 @@
                 <div class="hero__title">
                     Ice cream made with
                     <span class="hero__span">Passion</span>
-                
                 <ul class="hero__buttonList">
                     <li class="hero__buttonItem">
-
-                        <!-- check to make sure the href id is correct to the products anchor id and the How it's made anchor id-->
-
-                        <button type="button" href="#products" class="hero__button hero__button--odd">Products</button>
+                        <a href="#productsAnchor" class="hero__button hero__button--odd">Products</a>
                     </li>
                     <li class="hero__buttonItem">
-                        <button type="button" href="#aboutanchor" class="hero__button hero__button--even">How it's made</button>
+                        <a href="#aboutAnchor" class="hero__button hero__button--even">How it's made</a>
                     </li>
                 </ul>
                 <ul class="heroHype__list">
@@ -135,24 +124,21 @@
                 <use href="images/sprite.svg#icon-chevron"></use>
             </svg>
         </button>
-        
-        <!-- Verify correct anchor tags -->
-        
         <ul class="navModal__list">
             <li class="navModal__item">
-                <a href="" class="navModal__link">Home</a>
+                <a href="#" class="navModal__link js-close-menu">Home</a>
             </li>
             <li class="navModal__item">
-                <a href="#" class="navModal__link">About us</a>
+                <a href="#" class="navModal__link js-close-menu">About us</a>
             </li>
             <li class="navModal__item">
-                <a href="#aboutanchor" class="navModal__link">How it's made?</a>
+                <a href="#aboutAnchor" class="navModal__link js-close-menu">How it's made?</a>
             </li>
             <li class="navModal__item">
-                <a href="#products" class="navModal__link">Our products</a>
+                <a href="#productsAnchor" class="navModal__link js-close-menu">Our products</a>
             </li>
             <li class="navModal__item">
-                <a href="#" class="navModal__link">Contact</a>
+                <a href="#" class="navModal__link js-close-menu">Contact</a>
             </li>
         </ul>
     </div>
