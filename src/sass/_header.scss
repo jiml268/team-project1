@@ -237,8 +237,8 @@
         text-decoration: none;
         font-family: 'DM Sans';
         font-size: 8px;
-        line-height: calc(10/8);
-        padding: 7px 14px;
+        line-height: 1.25px;
+        padding: 10px 14px;
         text-transform: none;
         letter-spacing: 0.03em;
         border-radius: 20px;
@@ -255,22 +255,23 @@
             padding: 11px 24px;
         }
         &--odd {
-            background: $buttonAccentColor;
-            color: $textInverseColor;
-            &:focus,
-            &:hover {
-                background: $buttonNeutralColor;
-                color: $textAccentColor;
-            }
-        }
-        &--even {
-            background: $buttonInverseColor;
+            background: $backgroundInverseColor;
             color: $textAccentColor;
             &:focus,
             &:hover {
-                background: $buttonNeutralColor;
-                color: $textAccentColor;
+                background: $textAccentColor;
+                color: $backgroundInverseColor;
             }
+        }
+        &--even {
+            background: $backgroundInverseColor;
+                color: $textAccentColor;
+            
+                &:focus,
+                &:hover {
+                    background: $textAccentColor;
+                    color: $backgroundInverseColor;
+                }
         }
     }
     &__buttonItem {
@@ -522,7 +523,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        margin: 11px 20px 0;
+        margin: 11px 20px 11px 55px;
         cursor: pointer;
         font-family: 'DM Sans';
         &:hover,
