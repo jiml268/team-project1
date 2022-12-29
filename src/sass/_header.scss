@@ -78,7 +78,6 @@
         @media screen and (min-width: 1280px) {
             display: none;
         }
-
     }
     &__buyButton {
         display: none;
@@ -237,8 +236,9 @@
         text-decoration: none;
         font-family: 'DM Sans';
         font-size: 8px;
+        font-weight: 700;
         line-height: 1.25px;
-        padding: 10px 14px;
+        padding: 10px 13px;
         text-transform: none;
         letter-spacing: 0.03em;
         border-radius: 20px;
@@ -252,25 +252,24 @@
         @media screen and (min-width: 1280px) {
             font-size: 14px;
             line-height: calc(18/14);
-            padding: 11px 24px;
+            padding: 11px 23px;
         }
         &--odd {
-            background: $backgroundInverseColor;
-            color: $textAccentColor;
+            background: $buttonAccentColor;
+            color: $textInverseColor;
             &:focus,
             &:hover {
-                background: $textAccentColor;
-                color: $backgroundInverseColor;
+                background: $buttonNeutralColor;
+                color: $textAccentColor;
             }
         }
         &--even {
-            background: $backgroundInverseColor;
+            background: $buttonInverseColor;
                 color: $textAccentColor;
             
                 &:focus,
                 &:hover {
-                    background: $textAccentColor;
-                    color: $backgroundInverseColor;
+                    background: $buttonNeutralColor;
                 }
         }
     }
