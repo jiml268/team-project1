@@ -2,59 +2,45 @@
 
 .header {
     background-color: $backgroundFeatureLightColor;
-        overflow: hidden;
-        
+        overflow: hidden;        
     &__container {
         margin: 0 auto;
-        
-
         @media screen and (min-width: 480px) {
             max-width: 480px;
         }
-
         @media screen and (min-width: 768px) {
             max-width: 768px;
         }
-
         @media screen and (min-width: 1280px) {
             max-width: 1280px;
         }
     }
 }
-
-
 .headerNav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding-top: 8px;
-
     @media screen and (min-width: 768px) {
         justify-content: flex-start;
         padding-top: 32px;
     }
-    
     @media screen and (min-width: 1280px) {
         padding-top: 37px;
     }
-
     &__logo {
         width: 199px;
         height: 50px;
         margin-left: 20px;
-
         @media screen and (min-width: 768px) {
             margin-left: 32px;
         }
-
         @media screen and (min-width: 1280px) {
             margin-left: 56px;
         }
     }
-
     &__list {
         display: none;
-
         @media screen and (min-width:1280px) {
             display: flex;
             position: relative;
@@ -62,13 +48,11 @@
             margin-left: 128px;
         }
     }
-
     &__item {
         &:not(:last-child) {
             margin-right: 35px;
         }
     }
-
     &__link {
         font-family: 'DM Sans';
             font-weight: 700;
@@ -77,13 +61,11 @@
             align-items: center;        
             color: $textInverseColor;
             text-decoration: none;
-
             &:hover,
             &:focus {
                 color: $textAccentColor;
             }
     }
-
     &__menuButton {
         margin-right: 20px;
         border: none;
@@ -98,11 +80,8 @@
         }
 
     }
-
     &__buyButton {
         display: none;
-        
-
         @media screen and (min-width: 768px) {
             width: 160px;
             height: 44px;
@@ -122,43 +101,37 @@
             &:hover,
             &:focus {
                 background-color: $textAccentColor;
-                color: $backgroundInverseColor;}
+                color: $backgroundInverseColor;
+            }
             &:hover .headerNav__chevron,
             &:focus .headerNav__chevron {
-                stroke: $buttonInverseColor;}
+                stroke: $buttonInverseColor;
+            }
         }
-        
         @media screen and (min-width: 1280px) {
             margin-left: 141px;
         }
     }
-
     &__span {
         height: 24px;
         display: flex;
     }
-
     &__chevron {
         margin-left: 10px;
         stroke: $textAccentColor;
         fill: none;
     }
 }
-
 .hero {
     position: relative;
     display: flex;
     padding-bottom: 158px;
-
     @media screen and (min-width: 768px) {
         padding-bottom: 16px;
     }
-
     @media screen and (min-width: 1280px) {
         padding-bottom: 60px;
     }
-
-
     &__imageCone {
         width: 346px;
         height: 344px;
@@ -170,7 +143,6 @@
         top: 33px;
         right: -62px;
         z-index: 10;
-
         @media screen and (min-width: 768px) {
             width: 335px;
             height: 333px;  
@@ -178,14 +150,12 @@
             right: 185px; 
             justify-content: flex-start;      
         }
-
         @media screen and (min-width: 1280px) {
             width: 534px;
             height: 534px;
             top: -30px;
             right: 189px;
         }
-
         &--mobile {
             width: 171px;
             height: 410px;
@@ -194,12 +164,9 @@
             @media screen and (min-width: 768px) {
                 display: none;
             }
-            
         }
-
         &--tablet {
             display: none;
-
             @media screen and (min-width: 768px) {
                 display: block;
                 width: 143px;
@@ -207,15 +174,12 @@
                 margin-top: 37px;
                 margin-left: 74px;
             }
-            
             @media screen and (min-width: 1280px) {
                 display: none;
             }
         }
-
         &--desktop {
             display: none;
-
             @media screen and (min-width: 1280px) {
                 display: block;
                 width: 236px;
@@ -225,7 +189,6 @@
             }
         }
     }
-
     &__title {
         width: 218px;
         font-family: 'Titan One';
@@ -238,14 +201,12 @@
         margin-left: 20px;
         position: relative;
         z-index: 20;
-
         @media screen and (min-width: 768px) {
             width: 162;
             margin-top: 20px;
             font-size: 22px;
             line-height: calc(25/22);
         }
-
         @media screen and (min-width: 1280px) {
             width: 277px;
             margin-top: 60px;
@@ -254,7 +215,6 @@
             margin-left: 56px;
         }
     }
-
     &__span {
         color: $titlePrimaryColor;
         font-size: 46px;
@@ -266,23 +226,21 @@
             line-height: .8;
         }
     }
-
     &__buttonList {
         display: flex;
         margin-top: 20px;
-
         @media screen and (min-width: 1280px) {
             margin-top: 24px;
         }
     }
-
-
     &__button {
         text-decoration: none;
         font-family: 'DM Sans';
         font-size: 8px;
         line-height: calc(10/8);
         padding: 7px 14px;
+        text-transform: none;
+        letter-spacing: 0.03em;
         border-radius: 20px;
         display: flex;
         align-items: center;
@@ -291,35 +249,29 @@
         cursor: pointer;
         position: relative;
         z-index: 20; 
-
         @media screen and (min-width: 1280px) {
             font-size: 14px;
             line-height: calc(18/14);
             padding: 11px 24px;
         }
-
         &--odd {
-            background: $backgroundInverseColor;
-            color: $textAccentColor;
+            background: $buttonAccentColor;
+            color: $textInverseColor;
             &:focus,
             &:hover {
-                background: $textAccentColor;
-                color: $backgroundInverseColor;
+                background: $buttonNeutralColor;
+                color: $textAccentColor;
             }
         }
-
         &--even {
             background: $buttonInverseColor;
             color: $textAccentColor;
-
             &:focus,
             &:hover {
-                background: $textAccentColor;
-                color: $backgroundInverseColor;
+                background: $buttonNeutralColor;
+                color: $textAccentColor;
             }
         }
-
-
     }
     &__buttonItem {
         &:not(:last-child) {
@@ -330,11 +282,9 @@
         }
     }
 }
-
 .heroHype {
     &__list {
         display: none;
-
         @media screen and (min-width: 768px) {
             display: flex;
             flex-direction: column;
@@ -360,7 +310,6 @@
                 top: -192px;
             }
         }
-       
     }
     &__elipse {
         position: absolute; 
@@ -394,7 +343,7 @@
         font-family: 'DM Sans';
         font-size: 8px;
         line-height: calc(10/8);
-        color: #FFFFFF;
+        color: $textInverseColor;
         text-align: right;
         letter-spacing: 0.04em;
         text-transform: lowercase;
@@ -404,14 +353,11 @@
         }
     }
 }
-
 .heroMilk {
     display: none;
-
     @media screen and (min-width: 768px) {
         display: flex;
     }
-
     &__img {
         &--tablet {
             width: 152px;
@@ -435,7 +381,6 @@
         display: flex;
         flex-direction: column;
     }
-
     &__text {
         font-family: 'DM Sans';
         font-weight: 400;
@@ -451,17 +396,15 @@
             line-height: 140%;
             width: 200px;
             margin-top: 108px;
-
         }
     }
-
     &__button {
         width: 18px;
         height: 18px; 
         border-radius: 50%;
         border: none;
         cursor: pointer;
-        background-color: $titleInverseColor;
+        background-color: $buttonInverseColor;
         fill: $buttonAccentColor;
         display: flex;
         align-items: center;
@@ -469,15 +412,15 @@
         margin-top: 7px;
         &:hover,
             &:focus {
-                background-color: $titlePrimaryColor;
+                background-color: $buttonAccentColor;
             }
             &:hover .heroMilk__icon--desk,
             &:hover .heroMilk__icon--desk {
-                fill: $textInverseColor ;
+                fill: $buttonInverseColor ;
             }
             &:hover .heroMilk__icon--tablet,
             &:hover .heroMilk__icon--tablet {
-                fill: $textInverseColor ;
+                fill: $buttonInverseColor ;
             }
         @media screen and (min-width:1280px) {
             width: 26px;
@@ -499,14 +442,11 @@
         }
     }    
 }
-
 .heroTasty {
     display: none;
-
     @media screen and (min-width: 768px) {
         display: block;
     }
-
     &__image {
         &--tablet {
             width: 190px;
@@ -530,7 +470,6 @@
         }
     }
 }
-
 .navModal {
     position: fixed;
     top: 0;
@@ -543,12 +482,9 @@
     transition: transform 250ms ease-in-out;
     display: flex; 
     justify-content: flex-end;
-    
-    
     &.is-open {
         transform: translateX(0);
     }
-    
     &__container {
         background-color: $backgroundFeatureDarkColor;
         display: flex;
@@ -559,7 +495,6 @@
         @media screen and (min-width: 320px) {
             max-width: 320px;
         }
-
     }
     &__closeButton {
         width: 34px;
@@ -574,11 +509,10 @@
         justify-content: center;
         margin: 10px 10px 0 0;
     }    
-
     &__buyButton {
         width: 209px;
         height: 44px;
-        background: $backgroundInverseColor;
+        background: $buttonInverseColor;
         border: none;
         border-radius: 22px;
         color: $textAccentColor;
@@ -593,27 +527,26 @@
         font-family: 'DM Sans';
         &:hover,
         &:focus {
-            background-color: $textAccentColor;
-            color: $backgroundInverseColor;}
+            background-color: $buttonAccentColor;
+            color: $textInverseColor;
+        }
         &:hover .navModal__chevron,
         &:focus .navModal__chevron {
-            stroke: $buttonInverseColor;}
+            stroke: $textInverseColor;
+        }
     }
     &__span {
         height: 24px;
         display: flex;
     }
-
     &__chevron {
         margin-left: 10px;
         stroke: $textAccentColor;
         fill: none;
     }
-
     &__list {
         margin-top: 19px;
     }
-
     &__item {
         border-top: 1px solid #E18298;
         display: flex;
@@ -621,7 +554,6 @@
             border-bottom: 1px solid #E18298;
         }
     }
-
     &__link {
         font-family: 'DM Sans';
         font-weight: 700;
