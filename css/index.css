@@ -618,7 +618,7 @@ a {
   background-color: #D41443;
   color: #FFF;
 }
-.navModal__buyButton:hover .headerNav__chevron, .navModal__buyButton:focus .headerNav__chevron {
+.navModal__buyButton:hover .navModal__chevron, .navModal__buyButton:focus .navModal__chevron {
   stroke: #FFF;
 }
 .navModal__span {
