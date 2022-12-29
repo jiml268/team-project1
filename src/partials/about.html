@@ -1,32 +1,42 @@
-<section class="about" id="aboutAnchor">
-    <h2 class="about__label">TRADITION AND LOVE</h2>
-    <h3 class="about__title">HOW IT'S MADE?</h3>
+<section class="about__section" id="aboutAnchor">
     <div class="about__container">
-        <picture class="about__cow">
-            <source srcset="./images/about-cow-mobile.png" media="(max-width:767px)">
-            <source srcset="./images/about-cow-mobile-2x.png" media="(min-width:768px)">
-            <img class="about__image" src="./images/about-cow-mobile.png" alt="milk and cow">
-        </picture>
-        <div class="text">
-            <p class="text1">
-                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem eget,
+        <h2 class="about__primary-header">TRADITION AND LOVE</h2>
+        <h3 class="about__secondary-header">HOW IT'S MADE?</h3>
+        <div class="about__cow-container">
+            <picture class="about__cow-picture">
+                <source srcset="./images/about-cow-desk.png 1x, ./images/about-cow-desk-2x.png 2x"
+                    media="(min-width: 1280px)" width="501" height="501">
+                <source srcset="./images/about-cow-tablet.png 1x, ./images/about-cow-tablet-2x.png 2x"
+                    media="(min-width: 768px)" width="336" height="335">
+                <source srcset="./images/about-cow-mobile.png 1x, ./images/about-cow-mobile-2x.png 2x"
+                    media="(min-width: 480px)" width="280" height="279">
+                <img class="about__cow-image" src="./images/about-cow-mobile.png" alt="milk and cow" width="280"
+                    height="279">
+            </picture>
+        </div>
+        <div class="about__body-text-container">
+            <p class="about__body-text-one">
+                Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus lorem
+                eget,
                 egestas eros.
                 Maecenas eleifend erat at justo fringilla.
             </p>
-            <p class="text2">
-                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in imperdiet
+            <p class="about__body-text-two">
+                Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum. Mauris rhoncus orci in
+                imperdiet
                 placerat.
-                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh, tincidunt.
-            </p>
-            <p class="text2">
+                Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+                tincidunt.
+                <br />
+                <br />
                 Aliquam erat volutpat. Aenean accumsan.
             </p>
-
-            <button class="read__more" data-modal-open type="button">Read more
-                <svg class="read-icon" width="10px" height="10px">
-                    <use href="images/sprite.svg#icon-chevron"></use>
-                </svg>
-            </button>
         </div>
+        <button class="about__button" data-modal-open type="button">Read more
+            <svg class="aboout__button-icon" width="10px" height="10px">
+                <use href="images/sprite.svg#icon-chevron"></use>
+            </svg>
+        </button>
+    </div>
     </div>
 </section>
