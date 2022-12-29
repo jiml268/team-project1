@@ -14,10 +14,14 @@ html {
     margin: 0;
 }
 .advantages-section {
-    padding: 40px 0 87px 20px;
+    display: grid;
+    place-items: center;
     background-color: variables.$backgroundNeutralColor;
+    .advantages-section__container {
+        padding: 40px 0 87px 20px;
+    }
     .advantages__hidden-header {
-        display: none;
+        visibility: hidden;
     }
     .advantages__list {
         width: 230px;
@@ -26,7 +30,12 @@ html {
         gap: 32px;
     }
     .advantages__header {
-        font: 400 36px/42px "Titan One";
+        font-family: "Titan One";
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 41px;
+        letter-spacing: 0.04em;
+        text-transform: uppercase;
         color: variables.$iconAccentColor;
     }
     .advantages-icon {
@@ -38,14 +47,27 @@ html {
         stroke: variables.$titleSecondaryColor;
     }
     .advantages__text {
-        font: 700 12px/20px "DM Sans";
+        font-family: "DM Sans";
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 170%;
         margin-top: 18px;
     }
 }
-
+@media screen and (max-width: 768px) {
+    .advantages-section {
+        .advantages-section__container {
+            width: 100%;
+            max-width: 480px;
+        }
+    }
+}
 @media screen and (min-width: 768px) {
     .advantages-section {
-        padding-left: 32px;
+        .advantages-section__container {
+            padding-left: 16px;
+            width: 768px;
+        }
         .advantages-icon {
             margin-bottom: 36px;
         }
@@ -58,17 +80,22 @@ html {
             max-width: 180px;
         }
         .advantages__header {
-            font: 400 48px/55px "Titan One";
+            font-size: 48px;
+            line-height: 55px;
         }
         .advantages__text {
-            font: 700 14px/24px "DM Sans";
+            font-size: 14px;
+            line-height: 174%;
             margin-top: 13px;
         }
     }
 }
 @media screen and (min-width: 1280px) {
     .advantages-section {
-        padding-left: 16px;
+        .advantages-section__container {
+            padding-left: 16px;
+            width: 1280px;
+        }
         .advantages-icon {
             margin-bottom: 40px;
         }
@@ -81,11 +108,13 @@ html {
             max-width: 317px;
         }
         .advantages__header {
-            font: 400 58px/66px "Titan One";
+            font-size: 58px;
+            line-height: 66px;
         }
         .advantages__text {
-            font: 700 16px/28px "DM Sans";
             font-size: 16px;
+            line-height: 176%;
+            letter-spacing: 0.02em;
             margin-top: 16px;
         }
     }
