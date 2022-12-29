@@ -105,8 +105,12 @@
     flex-direction: column;
     text-align: center;
     align-items: center;
+    max-width: 280px;
+    margin: 0 auto;
+    
+}
+.products__list-item:not(:last-child){
     margin-bottom: 140px;
-
 }
 .products__list{
     padding:0;
@@ -115,6 +119,7 @@
 .arrow-button{
     margin: 15px;
     fill: variables.$buttonAccentColor;
+    display: flex;
 }
 @media screen and (min-width:480px){
     .products__container{
@@ -124,6 +129,9 @@
 }
 
 @media screen and (min-width: 768px){
+    .products__list-item:not(:last-child) {
+            margin-bottom: 0px;
+        }
     .products__container{
         max-width: 768px;
         margin: 0 auto;
@@ -166,16 +174,20 @@
         margin-left: -110px;
     }
     .products__list-item{
-        min-width: 224px;
+        max-width: 224px;
     }
     .products__list-item-icecream{
+    margin-right: 0;
     margin-bottom: 0;
     }
     .products__list-item-icecoffee{
     margin-bottom: 0;
+    margin-right: 16px;
+    margin-left: 16px;
     }
     .products__list-item-milkshakes{
     margin-bottom: 0;
+    margin-left: 0;
     }
     .products__end-info{
         display: none;
@@ -191,6 +203,9 @@
 }
 
 @media screen and (min-width:1200px){
+    .products__list-item {
+            max-width: 368px;
+        }
         .products__container {
             max-width: 1200px;
             margin-top: 60px;
@@ -236,6 +251,12 @@
         .products__list-item-icecoffee {
             margin-left: 32px;
             margin-right: 32px;
+        }
+        .products__list-item-icecream{
+            margin-right: 0;
+        }
+        .products__list-item-milkshakes{
+            margin-left: 0;
         }
 }
 @media screen and (min-width:1233px){
