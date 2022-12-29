@@ -1,17 +1,5 @@
 @use './utils/variables' as *;
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
 .header {
     background-color: $backgroundFeatureLightColor;
         overflow: hidden;
@@ -131,10 +119,13 @@ ul {
             margin-left: 32px;
             cursor: pointer;
             font-family: 'DM Sans';
-            &:focus,
-            &:hover {
-                background: $buttonNeutralColor;
-            }
+            &:hover,
+            &:focus {
+                background-color: $textAccentColor;
+                color: $backgroundInverseColor;}
+            &:hover .headerNav__chevron,
+            &:focus .headerNav__chevron {
+                stroke: $buttonInverseColor;}
         }
         
         @media screen and (min-width: 1280px) {
@@ -149,6 +140,8 @@ ul {
 
     &__chevron {
         margin-left: 10px;
+        stroke: $textAccentColor;
+        fill: none;
     }
 }
 
@@ -306,12 +299,12 @@ ul {
         }
 
         &--odd {
-            background: $buttonAccentColor;
-            color: $textInverseColor;
+            background: $backgroundInverseColor;
+            color: $textAccentColor;
             &:focus,
             &:hover {
-                background: $buttonNeutralColor;
-                color: $textAccentColor;
+                background: $textAccentColor;
+                color: $backgroundInverseColor;
             }
         }
 
@@ -321,7 +314,8 @@ ul {
 
             &:focus,
             &:hover {
-                background: $buttonNeutralColor;
+                background: $textAccentColor;
+                color: $backgroundInverseColor;
             }
         }
 
@@ -467,12 +461,24 @@ ul {
         border-radius: 50%;
         border: none;
         cursor: pointer;
-        background-color: $buttonInverseColor;
-        fill: $textAccentColor;
+        background-color: $titleInverseColor;
+        fill: $buttonAccentColor;
         display: flex;
         align-items: center;
         justify-content: center;
         margin-top: 7px;
+        &:hover,
+            &:focus {
+                background-color: $titlePrimaryColor;
+            }
+            &:hover .heroMilk__icon--desk,
+            &:hover .heroMilk__icon--desk {
+                fill: $textInverseColor ;
+            }
+            &:hover .heroMilk__icon--tablet,
+            &:hover .heroMilk__icon--tablet {
+                fill: $textInverseColor ;
+            }
         @media screen and (min-width:1280px) {
             width: 26px;
             height: 26px;
@@ -572,7 +578,7 @@ ul {
     &__buyButton {
         width: 209px;
         height: 44px;
-        background: $buttonInverseColor;
+        background: $backgroundInverseColor;
         border: none;
         border-radius: 22px;
         color: $textAccentColor;
@@ -585,10 +591,13 @@ ul {
         margin: 11px 20px 0;
         cursor: pointer;
         font-family: 'DM Sans';
-        &:focus,
-        &:hover {
-            background: $buttonNeutralColor;
-        }
+        &:hover,
+        &:focus {
+            background-color: $textAccentColor;
+            color: $backgroundInverseColor;}
+        &:hover .navModal__chevron,
+        &:focus .navModal__chevron {
+            stroke: $buttonInverseColor;}
     }
     &__span {
         height: 24px;
@@ -597,6 +606,8 @@ ul {
 
     &__chevron {
         margin-left: 10px;
+        stroke: $textAccentColor;
+        fill: none;
     }
 
     &__list {
