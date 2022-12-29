@@ -1,12 +1,5 @@
 @use './utils/variables';
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 .products__container{
     margin-left: 20px;
@@ -14,8 +7,6 @@
     margin-top: 60px;
     margin-bottom: 60px;
 }
-
-ul{list-style: none;}
 
 .products__title{
     display: flex;
@@ -95,11 +86,18 @@ ul{list-style: none;}
 
 .products__button{
     border-radius: 100%;
-    color: white;
+    color: variables.$titleInverseColor;
     margin-top: 32px;
     margin-bottom: 40px;
     border-style: none;
-}
+    cursor: pointer;
+    &:hover,
+    &:focus{
+        background-color:variables.$titlePrimaryColor;}
+    &:hover .arrow-button,
+    &:hover .arrow-button{
+        fill: variables.$textInverseColor ;
+    }}
 
 
 .products__list-item{
@@ -243,5 +241,6 @@ ul{list-style: none;}
 @media screen and (min-width:1233px){
         .products__container{
             margin: 0 auto;
+            margin-bottom: 60px;
         }
 }

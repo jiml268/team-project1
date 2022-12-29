@@ -1,23 +1,5 @@
 @use './utils/variables';
 
-ul {
-    list-style: none;
-    margin-top: 0;
-    margin-bottom: 0;
-    padding-left: 0;
-}
-
-
-a {
-    text-decoration: none;
-}
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0 auto;
-}
 
 .locations {
     background: linear-gradient(to bottom,
@@ -49,6 +31,7 @@ a {
     border-radius: 24px;
     padding: 40px 32px;
     max-width: 280px;
+    margin: 0 auto;
     margin-bottom: 20px;
 }
 
@@ -165,6 +148,10 @@ a {
 
 .locations__contact-item-link {
     color: variables.$textSecondaryColor;
+    &:hover,
+    &:focus{
+        color: variables.$titlePrimaryColor;
+    }
 }
 
 .locations__button-section {
@@ -174,7 +161,7 @@ a {
 }
 
 .locations__button-our {
-    background: variables.$textAccentColor;
+    background: variables.$backgroundInverseColor;
     border-radius: 22px;
     font-family: 'DM Sans';
     font-style: normal;
@@ -184,11 +171,19 @@ a {
     display: flex;
     align-items: center;
     text-align: center;
-    color: variables.$backgroundInverseColor;
+    color: variables.$textAccentColor;
     margin-bottom: 10px;
     padding: 10px 20px 10px 17px;
     border-style: none;
-}
+    cursor: pointer;
+    &:hover,
+    &:focus {
+    background-color: variables.$textAccentColor;
+    color:variables.$backgroundInverseColor;}
+    &:hover .send-icon-our,
+    &:focus .send-icon-our {
+        stroke: variables.$buttonInverseColor;
+}}
 
 .locations__button-franchise {
     background: variables.$backgroundInverseColor;
@@ -205,18 +200,27 @@ a {
     margin-bottom: 10px;
     padding: 10px 40px 10px 32px;
     border-style: none;
-}
+    cursor: pointer;
+    &:hover,
+    &:focus {
+    background-color: variables.$textAccentColor;
+    color: variables.$backgroundInverseColor;}
+    &:hover .send-icon-franchise,
+    &:focus .send-icon-franchise{
+        stroke: variables.$buttonInverseColor;
+    
+}}
 
 .send-icon-our {
-    fill: variables.$buttonInverseColor;
+    stroke: variables.$textAccentColor;
+    fill: none;
     margin-left: 8px;
-
 }
 
 .send-icon-franchise {
-    fill: variables.$textAccentColor;
+    stroke: variables.$textAccentColor;
+    fill: none;
     margin-left: 8px;
-
 }
 
 
