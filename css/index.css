@@ -302,8 +302,10 @@ a {
   text-decoration: none;
   font-family: "DM Sans";
   font-size: 8px;
-  line-height: 1.25;
-  padding: 7px 14px;
+  line-height: 1.25px;
+  padding: 10px 14px;
+  text-transform: none;
+  letter-spacing: 0.03em;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -415,7 +417,7 @@ a {
   font-family: "DM Sans";
   font-size: 8px;
   line-height: 1.25;
-  color: #FFFFFF;
+  color: #FFF;
   text-align: right;
   letter-spacing: 0.04em;
   text-transform: lowercase;
@@ -610,7 +612,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 11px 20px 0;
+  margin: 11px 20px 11px 55px;
   cursor: pointer;
   font-family: "DM Sans";
 }
@@ -702,6 +704,7 @@ a {
   letter-spacing: 0.04em;
   color: #FFF;
   padding-top: 160px;
+  padding-bottom: 32px;
 }
 
 .prodcuts__list-item-info {
@@ -713,6 +716,7 @@ a {
   text-align: center;
   letter-spacing: 0.04em;
   color: #FFF;
+  padding-top: 32px;
   padding-left: 41px;
   padding-right: 39px;
 }
@@ -1154,7 +1158,6 @@ img {
     font-size: 14px;
     line-height: 1.3021428571;
     align-self: flex-start;
-    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 768px) {
