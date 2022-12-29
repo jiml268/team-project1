@@ -1,7 +1,7 @@
 @use './utils/variables';
 
 
-.about {
+.about__section {
     background-color: variables.$backgroundNeutralColor;
     margin: 0;
     margin-top: 60px;
@@ -13,193 +13,80 @@ img {
     height: auto;
 }
 
-.container {
+.about__container {
     width: 100%;
     padding-left: 20px;
     padding-right: 20px;
     margin: 0 auto;
-}
-.about__label {
-    font-family: "Titan One", sans-serif;
-    color: variables.$backgroundFeatureBaseColor;
-    font-weight: 400;
-    text-align: center;
-    padding-top: 60px;
-    font-size: 18px;
-    line-height: calc(20.61/18);
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        font-size: 26px;
-        line-height: calc(29.77/26);
-    }
-
-    @media screen and (min-width: 1280px) {
-        font-size: 30px;
-        line-height: calc(34.35/30);
-    }
-
-
-}
-
-.about__title {
-    font-family: "Titan One", sans-serif;
-    color: variables.$textAccentColor;
-    font-weight: 400;
-    text-align: center;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: 34px;
-        line-height: calc(38.93/34);
-        letter-spacing: 0.04em;
-        width: 200px;
-        height: 76px;
-        margin: 15px auto;
-
-
-    }
-
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        font-size: 48px;
-        line-height: calc(54.96/48);
-        letter-spacing: 0.04em;
-    }
-
-    @media screen and (min-width: 1280px) {
-        font-size: 58px;
-        line-height: calc(66.41/58);
-        letter-spacing: 0.06em;
-    }
-
-}
-
-.about__container {
-
-    display: flex;
-
-    @media screen and (max-width: 767px) {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 20px;
-        padding-right: 20px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        justify-content: space-around;
-        max-width: 768px;
-        margin: 0 auto;
-    }
-
-    @media screen and (min-width: 1280px) {
-        background-image: url('../images/about-milk-splash-mobile-2x.png');
-        background-size: cover;
-        background-repeat: no-repeat;
-        max-width: 768px;
-        margin: 0 auto;
-
-    }
-}
-
-.about__cow {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 40px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        width: 336px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        width: 501px;
-    }
-}
-
-.text {
     display: flex;
     flex-direction: column;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        padding-right: 80px;
-        background-image: url('../images/about-milk-splash-mobile.png');
-        background-repeat: no-repeat;
-        background-position-y: 71px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        width: 334px;
-        padding-left: 32px;
-        padding-top: 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        letter-spacing: 0.04em;
-        width: 463px;
-        padding-left: 99px;
-        padding-top: 150px;
-    }
+    align-items: center;
 }
 
-.text1 {
-    font-family: "DM Sans", sans-serif;
-    color: variables.$textPrimaryColor;
+.about__primary-header {
+    font-family: "Titan One", sans-serif;
+    color: variables.$backgroundFeatureBaseColor;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 16px;
+    font-size: 18px;
+    line-height: calc(21/18);
+}
+
+.about__secondary-header {
+    font-family: "Titan One", sans-serif;
+    color: variables.$textAccentColor;
+    font-style: normal;
+    font-weight: 400px;
+    text-align: center;
+    width: 150px;
+    margin-bottom: 32px;
+}
+
+.about__cow-container {
+    margin-bottom: 40px;
+}
+
+.about__body-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+
+}
+
+.about__body-text-one {
+    font-family: 'DM Sans';
+    font-style: normal;
     font-weight: 500;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: 12px;
-        line-height: calc(19.44/12);
-        padding-bottom: 40px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        display: block;
-        font-size: 14px;
-        line-height: calc(24.64/14);
-        padding-bottom: 40px;
-    }
-
-    @media screen and (min-width: 1280px) {
-        display: block;
-        font-size: 16px;
-        line-height: calc(28.16/16);
-        padding-bottom: 32px;
-    }
+    font-size: 12px;
+    line-height: calc(19/12);
+    color: #000000;
+    width: 220px;
+    margin-bottom: 24px;
 }
 
-.text2 {
-    font-family: "DM Sans", sans-serif;
-    color: variables.$textSecondaryColor;
+.about__body-text-two {
+    font-family: 'DM Sans';
+    font-style: normal;
     font-weight: 500;
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: 12px;
-        line-height: calc(19.44/12);
-        padding-bottom: 20px;
-    }
-
-    @media screen and (min-width: 768px) and (max-width: 1279px) {
-        display: block;
-        font-size: 14px;
-        line-height: calc(24.64/14);
-        letter-spacing: 0.04em;
-
-    }
-
-    @media screen and (min-width: 1280px) {
-        display: block;
-        font-size: 14px;
-        line-height: calc(27.16/14);
-
-    }
+    font-size: 12px;
+    line-height: cacl(19/12);
+    color: #907E82;
+    width: 210px;
+    margin-bottom: 20px;
 }
-.read-icon{
+
+.aboout__button-icon {
     stroke: variables.$buttonAccentColor;
     fill: none;
     margin-left: 13px;
 }
 
-.read__more {
+.about__button {
     font-weight: 700;
-
     text-align: center;
     letter-spacing: 0.06em;
     color: variables.$buttonAccentColor;
@@ -207,12 +94,11 @@ img {
     cursor: pointer;
     display: block;
     border-radius: 22px;
-    padding-left: 37px;
+    padding: 12px 37px;
     display: flex;
     align-items: center;
     border: none;
-    width: 176px;
-    height: 44px;
+
     &:hover,
     &:focus {
         background-color: variables.$buttonAccentColor;
@@ -220,18 +106,4 @@ img {
     &:hover .read-icon,
     &:focus .read-icon {
         stroke: variables.$buttonInverseColor;}
-
-    @media screen and (min-width: 320px) and (max-width: 767px) {
-        font-size: 14px;
-        line-height: calc(18.23/14);
-        align-self: flex-start;
-        
-    }
-
-    @media screen and (min-width: 768px) {
-        font-size: 16px;
-        line-height: calc(20.83/16);
-        margin-top: 40px;
-        
-    }
 }
