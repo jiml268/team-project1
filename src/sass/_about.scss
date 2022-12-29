@@ -192,7 +192,7 @@ img {
     }
 }
 .read-icon{
-    stroke: variables.$textAccentColor;
+    stroke: variables.$buttonAccentColor;
     fill: none;
     margin-left: 13px;
 }
@@ -202,7 +202,7 @@ img {
 
     text-align: center;
     letter-spacing: 0.06em;
-    color: variables.$titlePrimaryColor;
+    color: variables.$buttonAccentColor;
     background-color: #ffff;
     cursor: pointer;
     display: block;
@@ -215,8 +215,8 @@ img {
     height: 44px;
     &:hover,
     &:focus {
-        background-color: variables.$textAccentColor;
-        color: variables.$backgroundInverseColor;}
+        background-color: variables.$buttonAccentColor;
+        color: variables.$buttonInverseColor;}
     &:hover .read-icon,
     &:focus .read-icon {
         stroke: variables.$buttonInverseColor;}
@@ -232,6 +232,6 @@ img {
         font-size: 16px;
         line-height: calc(20.83/16);
         margin-top: 40px;
-        margin-bottom: 60px;
+        
     }
 }

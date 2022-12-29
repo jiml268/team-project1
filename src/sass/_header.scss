@@ -255,22 +255,22 @@
             padding: 11px 24px;
         }
         &--odd {
-            background: $backgroundInverseColor;
-            color: $textAccentColor;
+            background: $buttonInverseColor;
+            color: $buttonAccentColor;
             &:focus,
             &:hover {
-                background: $textAccentColor;
-                color: $backgroundInverseColor;
+                background: $buttonAccentColor;
+                color: $buttonInverseColor;
             }
         }
         &--even {
-            background: $backgroundInverseColor;
-                color: $textAccentColor;
+            background: $buttonInverseColor;
+                color: $buttonAccentColor;
             
                 &:focus,
                 &:hover {
-                    background: $textAccentColor;
-                    color: $backgroundInverseColor;
+                    background: $buttonAccentColor;
+                    color: $buttonInverseColor;
                 }
         }
     }
@@ -529,11 +529,11 @@
         &:hover,
         &:focus {
             background-color: $buttonAccentColor;
-            color: $textInverseColor;
+            color: $buttonInverseColor;
         }
         &:hover .navModal__chevron,
         &:focus .navModal__chevron {
-            stroke: $textInverseColor;
+            stroke: $buttonInverseColor;
         }
     }
     &__span {
@@ -542,7 +542,7 @@
     }
     &__chevron {
         margin-left: 10px;
-        stroke: $textAccentColor;
+        stroke: $buttonAccentColor;
         fill: none;
     }
     &__list {

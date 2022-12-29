@@ -11,7 +11,7 @@
     place-items: center;
     background-color: variables.$backgroundNeutralColor;
     .advantages-section__container {
-        padding: 40px 0 87px 20px;
+        padding: 40px 0 30px 20px;
     }
     .advantages__hidden-header {
         visibility: hidden;
@@ -59,6 +59,8 @@
     .advantages-section {
         .advantages-section__container {
             padding-left: 16px;
+            padding-top: 60px;
+            padding-bottom: 32px;
             width: 768px;
         }
         .advantages-icon {
@@ -86,7 +88,9 @@
 @media screen and (min-width: 1280px) {
     .advantages-section {
         .advantages-section__container {
+            padding-top: 121px;
             padding-left: 16px;
+            padding-bottom: 60px;
             width: 1280px;
         }
         .advantages-icon {
