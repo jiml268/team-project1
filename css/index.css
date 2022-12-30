@@ -301,9 +301,10 @@ a {
 .hero__button {
   text-decoration: none;
   font-family: "DM Sans";
+  font-weight: 700;
   font-size: 8px;
   line-height: 1.25px;
-  padding: 10px 14px;
+  padding: 10px 13px;
   text-transform: none;
   letter-spacing: 0.03em;
   border-radius: 20px;
@@ -319,7 +320,7 @@ a {
   .hero__button {
     font-size: 14px;
     line-height: 1.2857142857;
-    padding: 11px 24px;
+    padding: 11px 23px;
   }
 }
 .hero__button--odd {
@@ -2096,6 +2097,10 @@ ul {
   pointer-events: none;
 }
 
+.icon-close {
+  fill: #ffffff;
+}
+
 .icon-close:hover {
   fill: #D41443;
 }
@@ -2106,21 +2111,28 @@ ul {
 }
 
 .form-button {
+  border-radius: 22px;
   margin-bottom: 40px;
   margin-left: 110px;
   border: none;
   padding: 16px 80px;
-  border-radius: 4px;
   background-color: #D41443;
   color: #FFFFFF;
-  font-size: 16px;
+  font-family: "DM Sans";
+  font-style: normal;
   font-weight: 700;
+  font-size: 16px;
+  line-height: 21px;
   cursor: pointer;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-button:hover, .form-button:focus {
   background-color: #D41443;
+  color: #FFFFFF;
+}
+.form-button:hover .send-icon-our, .form-button:focus .send-icon-our {
+  stroke: #FFFFFF;
 }
 
 .checkbox {
@@ -2146,13 +2158,14 @@ ul {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: #ffb8ca;
   padding: 8px;
 }
 
 .modal__button {
   float: right;
   border-style: none;
-  background-color: white;
+  background-color: #ffa5ba;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -2177,6 +2190,7 @@ ul {
   font-size: 12px;
   position: relative;
   margin-bottom: 15px;
+  color: #D41443;
 }
 .modal__label:not(:last-child) {
   border-color: #D41443;
@@ -2190,7 +2204,7 @@ ul {
   top: 55%;
   margin-left: 12px;
   margin-bottom: 11px;
-  fill: #000000;
+  fill: #FFFFFF;
 }
 
 .modal__input {
@@ -2199,6 +2213,7 @@ ul {
   height: 40px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding-left: 33px;
+  background-color: #ffa5ba;
 }
 .modal__input:hover, .modal__input:focus {
   border-color: #D41443;
@@ -2214,10 +2229,15 @@ ul {
   font-family: "DM Sans";
   padding: 12px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  background-color: #ffa5ba;
 }
 .modal__textarea-input:hover, .modal__textarea-input:focus {
   border-color: #D41443;
   outline: none;
+}
+
+::placeholder {
+  color: #FFFFFF;
 }
 
 .modal__caption {
@@ -2225,7 +2245,7 @@ ul {
   font-weight: 700;
   font-family: "DM Sans";
   line-height: 1.15;
-  color: #000000;
+  color: #FFFFFF;
 }
 
 .modal__checkbox-label {
@@ -2234,12 +2254,17 @@ ul {
   padding-bottom: 30px;
   display: flex;
   cursor: pointer;
+  color: #D41443;
+}
+
+.terms-conditions {
+  color: #D41443;
 }
 
 .modal__checkbox {
   width: 15px;
   height: 15px;
-  border: 1px solid #000000;
+  border: 1px solid #FFFFFF;
   border-radius: 2px;
   margin-right: 8px;
   margin-top: 5px;
@@ -2298,4 +2323,4 @@ ul {
     margin-bottom: 40px;
     margin-left: 20px;
   }
-}
+}/*# sourceMappingURL=index.css.map */
