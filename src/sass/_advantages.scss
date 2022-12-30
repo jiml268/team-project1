@@ -7,20 +7,35 @@
     margin: 0;
 }
 .advantages-section {
-    display: grid;
-    place-items: center;
     background-color: variables.$backgroundNeutralColor;
     .advantages-section__container {
-        padding: 40px 0 30px 20px;
+        padding: 40px 0 60px 20px;
+        max-width: 320px;
+        margin: 0 auto;
+        
     }
     .advantages__hidden-header {
-        visibility: hidden;
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        margin: -1px;
+        border: 0;
+        padding: 0;
+        white-space: nowrap;
+        clip-path: inset(100%);
+        clip: rect(0 0 0 0);
+        overflow: hidden;
     }
     .advantages__list {
         width: 230px;
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        align-items: flex-end;
+    }
+    .advantages__list-item {
+        &:not(:last-child) {
+            margin-bottom: 32px;
+        }
     }
     .advantages__header {
         font-family: "Titan One";
@@ -47,7 +62,7 @@
         margin-top: 18px;
     }
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 480px) {
     .advantages-section {
         .advantages-section__container {
             width: 100%;
@@ -58,10 +73,8 @@
 @media screen and (min-width: 768px) {
     .advantages-section {
         .advantages-section__container {
-            padding-left: 16px;
-            padding-top: 60px;
-            padding-bottom: 32px;
-            width: 768px;
+            padding: 60px 32px 64px 32px;
+            max-width: 768px;
         }
         .advantages-icon {
             margin-bottom: 36px;
@@ -69,10 +82,13 @@
         .advantages__list {
             width: auto;
             flex-direction: row;
-            gap: 0px;
         }
         .advantages__list-item {
             max-width: 180px;
+            &:not(:last-child) {
+                margin-right: 16px;
+                margin-bottom: 0;
+            }
         }
         .advantages__header {
             font-size: 48px;
@@ -88,10 +104,9 @@
 @media screen and (min-width: 1280px) {
     .advantages-section {
         .advantages-section__container {
-            padding-top: 121px;
-            padding-left: 16px;
-            padding-bottom: 60px;
-            width: 1280px;
+            padding: 40px 16px 120px 16px;
+            max-width: 1200px;
+            margin: 0 0;
         }
         .advantages-icon {
             margin-bottom: 40px;
@@ -99,10 +114,10 @@
         .advantages__list {
             justify-content: space-between;
             margin-right: 96px;
-            width: 1280px;
+            max-width: 1280px;
         }
         .advantages__list-item {
-            max-width: 317px;
+            max-width: 288px;
         }
         .advantages__header {
             font-size: 58px;
