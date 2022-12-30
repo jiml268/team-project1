@@ -1208,6 +1208,164 @@ ul {
     background-image: linear-gradient(to bottom, #FFF5F6 20%, #FFF5F6 20%, #FFFFFF 15%);
   }
 }
+.slideshow-container {
+  max-width: 280px;
+  position: relative;
+  margin: auto;
+}
+
+.review__slides {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.review__image {
+  margin: 0 auto;
+  padding-top: 60px;
+}
+
+.review__box {
+  padding-top: 43px;
+  margin: 32px auto 0 auto;
+  width: 280px;
+  background-color: #FAFAFA;
+}
+
+.review__text {
+  padding-bottom: 26px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
+  width: 157px;
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 255%;
+  text-align: center;
+  color: #000000;
+}
+
+.review__icon {
+  fill: #C7133E;
+}
+
+.review__name-location {
+  font-family: "DM Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 186%;
+  text-align: center;
+  color: #000000;
+}
+
+.review__gradient {
+  width: 180px;
+  margin: 0 auto;
+  background-image: repeating-linear-gradient(#FAFAFA, #FAFAFA 30px, #E1E1E1 30px, #E1E1E1 31px, #E1E1E1 31px);
+}
+
+.review__icon {
+  display: flex;
+  align-items: center;
+  --color1: #C7133E;
+  margin: 16px auto;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+@media screen and (min-width: 768px) {
+  .slideshow-container {
+    max-width: 620px;
+    width: 620px;
+  }
+  .review__box {
+    width: 620px;
+  }
+  .review__gradient {
+    width: 608px;
+  }
+  .review__text {
+    width: 514px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 216%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .slideshow-container {
+    max-width: 968px;
+    width: 968px;
+  }
+  .review__box {
+    width: 968px;
+    max-width: 968px;
+  }
+  .review__gradient {
+    width: 822px;
+  }
+  .review__text {
+    width: 750px;
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 186%;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #000000;
+  }
+  .review__name-location {
+    font-family: "DM Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 186%;
+    text-align: center;
+    color: #000000;
+  }
+}
 .locations {
   background: linear-gradient(to bottom, #FFF 21%, #FFF5F6 21%, #FFF5F6 75%);
 }
