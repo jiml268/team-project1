@@ -929,18 +929,11 @@ a {
   background-color: #FFF5F6;
   margin: 0;
   margin-top: 60px;
-}
-
-img {
-  display: block;
-  max-width: 100%;
-  height: auto;
+  padding: 60px 20px 0 20px;
 }
 
 .about__container {
   width: 100%;
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -979,6 +972,12 @@ img {
   justify-content: center;
   margin-bottom: 40px;
   width: 100%;
+}
+
+.about__cow-image {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .about__body-text-container {
@@ -1049,14 +1048,11 @@ img {
 
 @media screen and (min-width: 768px) {
   .about__section {
-    padding-top: 60px;
+    padding: 60px 30px 0 30px;
   }
-  .about__body-container {
-    width: 100%;
-    display: flex;
-  }
-  .about__cow-image-container {
-    width: 100%;
+  .about__container {
+    max-width: 738px;
+    margin: 0 auto;
   }
   .about__primary-header {
     font-size: 26px;
@@ -1067,8 +1063,92 @@ img {
     line-height: 1.1458333333;
     width: 435px;
   }
+  .about__body-container {
+    width: 100%;
+    display: flex;
+  }
   .about__cow-image-container {
+    width: 100%;
     margin-right: 32px;
+  }
+  .about__body-text-container {
+    background-image: none;
+  }
+  .about__body-text-one {
+    font-size: 14px;
+    line-height: 1.7857142857;
+    width: 334px;
+    margin-bottom: 20px;
+  }
+  .about__body-text-two {
+    font-size: 14px;
+    line-height: 1.7857142857;
+    width: 308px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__section {
+    padding: 60px 0 0 0;
+  }
+  .about__container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .about__primary-header {
+    font-size: 30px;
+    line-height: 1.1333333333;
+  }
+  .about__secondary-header {
+    font-size: 58px;
+    line-height: 1.1379310345;
+    width: 534px;
+  }
+  .about__body-container {
+    background-image: url("../images/about-milk-splash-desk.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    display: flex;
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1280px) {
+  .about__body-container {
+    background-image: url("../images/about-milk-splash-desk.png");
+  }
+}
+@media screen and (min-width: 1280px) and (min-width: 1280px) and (min-width: 1280px) and (min-device-pixel-ratio: 2), screen and (min-width: 1280px) and (min-width: 1280px) and (min-resolution: 192dpi), screen and (min-width: 1280px) and (min-width: 1280px) and (min-resolution: 2dppx) {
+  .about__body-container {
+    background-image: url("../images/about-milk-splash-desk-2x.png");
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__cow-image-container {
+    width: 501px;
+    margin-right: 99px;
+    padding-left: 16px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__body-text-container {
+    background-image: none;
+    margin: 0 0;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__body-text-one {
+    font-size: 16px;
+    line-height: 1.5625;
+    width: 463px;
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .about__body-text-two {
+    font-size: 14px;
+    line-height: 1.9285714286;
+    width: 463px;
+    margin-bottom: 40px;
   }
 }
 .list {
