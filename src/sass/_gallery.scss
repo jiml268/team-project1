@@ -15,11 +15,10 @@ ul {
 
 .gallery__section {
     background-image: linear-gradient(to bottom,
-        #FFF5F6 34%,
-        #FFF5F6 34%,
-        #FFFFFF 15%);
-
-    padding-top: 30px;
+            #FFF5F6 20%,
+            #FFF5F6 20%,
+            #FFFFFF 15%,
+        );
 }
 
 .gallery__list {
@@ -65,21 +64,17 @@ ul {
 @media screen and (min-width: 768px) {
     .gallery__section {
         background-image: linear-gradient(to bottom,
-            #FFF5F6 60%,
-            #FFF5F6 60%,
-            #FFFFFF 20%);
-
-        padding-top: 32px;
+                #FFF5F6 60%,
+                #FFF5F6 60%,
+                #FFFFFF 20%);
     }
 }
 
 @media screen and (min-width: 1280px) {
     .gallery__section {
         background-image: linear-gradient(to bottom,
-            #FFF5F6 29%,
-            #FFF5F6 29%,
-            #FFFFFF 15%);
-
-        padding-top: 60px;
+                #FFF5F6 20%,
+                #FFF5F6 20%,
+                #FFFFFF 15%);
     }
 }
