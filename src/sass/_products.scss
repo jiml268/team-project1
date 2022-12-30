@@ -127,6 +127,7 @@
     .products__container{
         max-width: 440px;
         margin: 0 auto;
+        margin-top: 60px;
     }
 }
 
@@ -264,6 +265,7 @@
 @media screen and (min-width:1233px){
         .products__container{
             margin: 0 auto;
+            margin-top: 32px;
             margin-bottom: 60px;
         }
 }
