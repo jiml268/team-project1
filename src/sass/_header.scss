@@ -78,7 +78,6 @@
         @media screen and (min-width: 1280px) {
             display: none;
         }
-
     }
     &__buyButton {
         display: none;
@@ -236,9 +235,10 @@
     &__button {
         text-decoration: none;
         font-family: 'DM Sans';
+        font-weight: 700;
         font-size: 8px;
         line-height: 1.25px;
-        padding: 10px 14px;
+        padding: 10px 13px;
         text-transform: none;
         letter-spacing: 0.03em;
         border-radius: 20px;
@@ -252,7 +252,7 @@
         @media screen and (min-width: 1280px) {
             font-size: 14px;
             line-height: calc(18/14);
-            padding: 11px 24px;
+            padding: 11px 23px;
         }
         &--odd {
             background: $buttonInverseColor;
