@@ -952,8 +952,10 @@ img {
   color: #FFA5BA;
   font-style: normal;
   font-weight: 400;
+  font-size: 18px;
+  line-height: 1.1666666667;
   text-align: center;
-  margin-top: 60px;
+  text-transform: uppercase;
   margin-bottom: 16px;
   font-size: 18px;
   line-height: 1.1666666667;
@@ -962,22 +964,33 @@ img {
 .about__secondary-header {
   font-family: "Titan One", sans-serif;
   color: #D41443;
-  font-style: normal;
-  font-weight: 400px;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.1470588235;
   text-align: center;
-  width: 150px;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  width: 200px;
   margin-bottom: 32px;
 }
 
-.about__cow-container {
+.about__cow-image-container {
+  display: flex;
+  justify-content: center;
   margin-bottom: 40px;
+  width: 100%;
 }
 
 .about__body-text-container {
+  background-image: url("../images/about-milk-splash-mobile.png");
+  background-repeat: no-repeat;
+  background-position-y: 70px;
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
+  justify-content: center;
 }
 
 .about__body-text-one {
@@ -1000,9 +1013,11 @@ img {
   color: #907E82;
   width: 210px;
   margin-bottom: 20px;
+  display: flex;
+  align-items: center;
 }
 
-.aboout__button-icon {
+.about__button-icon {
   stroke: #D41443;
   fill: none;
   margin-left: 13px;
@@ -1021,15 +1036,41 @@ img {
   display: flex;
   align-items: center;
   border: none;
+  align-self: flex-start;
 }
 .about__button:hover, .about__button:focus {
   background-color: #D41443;
   color: #FFF;
 }
-.about__button:hover .read-icon, .about__button:focus .read-icon {
+.about__button:hover .about__button-icon, .about__button:focus .about__button-icon {
   stroke: #FFF;
+  fill: none;
 }
 
+@media screen and (min-width: 768px) {
+  .about__section {
+    padding-top: 60px;
+  }
+  .about__body-container {
+    width: 100%;
+    display: flex;
+  }
+  .about__cow-image-container {
+    width: 100%;
+  }
+  .about__primary-header {
+    font-size: 26px;
+    line-height: 1.1538461538;
+  }
+  .about__secondary-header {
+    font-size: 48px;
+    line-height: 1.1458333333;
+    width: 435px;
+  }
+  .about__cow-image-container {
+    margin-right: 32px;
+  }
+}
 .list {
   list-style: none;
   padding: 0;
@@ -1933,4 +1974,4 @@ ul {
     width: 278px;
     padding-top: 7px;
   }
-}
+}/*# sourceMappingURL=index.css.map */
