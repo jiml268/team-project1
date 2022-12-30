@@ -97,7 +97,7 @@
     &:focus{
         background-color:variables.$titlePrimaryColor;}
     &:hover .arrow-button,
-    &:hover .arrow-button{
+    &:focus .arrow-button{
         fill: variables.$textInverseColor ;
     }}
 
