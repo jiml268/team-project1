@@ -30,22 +30,31 @@
 }
 
 .form-button {
+border-radius: 22px;
     margin-bottom: 40px;
     margin-left: 110px;
     border: none;
     padding: 16px 80px;
-    border-radius: 4px;
     background-color:variables.$buttonAccentColor;
     color: variables.$buttonInverseColor;
-    font-size: 16px;
+font-family: 'DM Sans';
+    font-style: normal;
     font-weight: 700;
+    font-size: 16px;
+    line-height: 21px;
     cursor: pointer;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
     transition: background-color variables.$time variables.$time-function;
 
-    &:hover,
-    &:focus {
-        background-color: variables.$buttonAccentColor;
+        &:hover,
+        &:focus {
+            background-color: variables.$textAccentColor;
+            color: variables.$backgroundInverseColor;
+        }
+    
+        &:hover .send-icon-our,
+        &:focus .send-icon-our {
+            stroke: variables.$buttonInverseColor;
     }
 }
 
@@ -72,6 +81,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    background-color: #ffb8ca;
     padding: 8px;
 }
 
@@ -128,6 +138,7 @@
     height: 40px;
     transition: border-color variables.$time variables.$time-function;
     padding-left: 33px;
+    background-color: #ffa5ba;
 
     &:hover,
     &:focus {
@@ -145,7 +156,7 @@
     font-family: 'DM Sans';
     padding: 12px 16px;
     transition: border-color variables.$time variables.$time-function;
-
+background-color: #ffa5ba;
     &:hover,
     &:focus {
         border-color:variables.$buttonAccentColor;
