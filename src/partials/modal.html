@@ -1,0 +1,53 @@
+<div class="backdrop is-hidden" data-modal>
+    <div class="modal">
+        <button type="button" class="modal__button" data-modal-close><svg class="icon-close" width="30px" height="30px">
+                <use href="images/sprite.svg#icon-close"></use>
+            </svg>
+        </button>
+        <form class="modal__form" name="customer__information">
+            <b class="modal__caption">Leave your information and we'll call you back</b>
+            <label class="modal__label">
+                Name
+                <svg class="modal__icon" width="12px" height="12px">
+                    <use href="images\sprite.svg#icon-person"></use>
+                </svg>
+                <input class="modal__input" type="text" name="full-name">
+            </label>
+            <label class="modal__label">
+                Telephone
+                <svg class="modal__icon" width="13px" height="13px">
+                    <use href="images\sprite.svg#icon-phone"></use>
+                </svg>
+                <input class="modal__input" type="tel" name="phone-number">
+            </label>
+            <label class="modal__label">
+                E-mail
+                <svg class="modal__icon" width="15px" height="12px">
+                    <use href="images\sprite.svg#icon-email"></use>
+                </svg>
+                <input class="modal__input" type="email" name="email">
+            </label>
+            <label class="modal__label">
+                Comments
+                <textarea class="modal__textarea-input" name="comments" rows="5"
+                    placeholder="Enter the text"></textarea>
+            </label>
+            <input class="checkbox" type="checkbox" name="terms" value="agree" required id="checkbox-policy">
+            <label class="modal__checkbox-label" for="checkbox-policy">
+                <span class="modal__checkbox">
+                    <svg class="modal__checkmark" width="11px" height="8px">
+                        <use href="images/sprite.svg#icon-checkmark"></use>
+                    </svg>
+                </span>
+                <span>
+                    I agree with the newsletter and accept the
+                    <a class="terms-conditions" href="#">
+                        Terms and Conditions
+                    </a>
+                </span>
+            </label>
+            <button class="form-button" type="submit">Send</button>
+        </form>
+    </div>
+</div>
+<script src="./modal.js"></script>

@@ -1,0 +1,246 @@
+@use './utils/variables';
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    visibility: visible;
+    opacity: 1;
+    background-color: variables.$modal-background;
+    transition: opacity variables.$time variables.$time-function,
+        visbility variables.$time variables.$time-function;
+        z-index: 1000;
+}
+
+.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.icon-close:hover {
+    fill: variables.$buttonAccentColor;
+}
+
+.checkbox:checked+.modal__checkbox-label>.modal__checkbox {
+    background-color:variables.$buttonAccentColor;
+    border: none;
+}
+
+.form-button {
+    margin-bottom: 40px;
+    margin-left: 110px;
+    border: none;
+    padding: 16px 80px;
+    border-radius: 4px;
+    background-color:variables.$buttonAccentColor;
+    color: variables.$buttonInverseColor;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+    transition: background-color variables.$time variables.$time-function;
+
+    &:hover,
+    &:focus {
+        background-color: variables.$buttonAccentColor;
+    }
+}
+
+.checkbox {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.modal {
+    position: absolute;
+    width: 528px;
+    min-height: 581px;
+    background-color: variables.$buttonInverseColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 8px;
+}
+
+.modal__button {
+    float: right;
+    border-style: none;
+    background-color: #FFFF;
+    border-radius: 50%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal__form {
+    padding-top: 40px;
+    padding-right: 39px;
+    padding-left: 41px;
+}
+
+.modal__label {
+    display: flex;
+    flex-direction: column;
+    font-family: DM Sans;
+    font-weight: 400;
+    font-size: 12px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+        border-color:variables.$buttonAccentColor;
+
+        &:hover .modal__icon,
+        &:focus .modal__icon {
+            fill:variables.$buttonAccentColor;
+        }
+    }
+}
+
+.modal__icon {
+    position: absolute;
+    top: 55%;
+    margin-left: 12px;
+    margin-bottom: 11px;
+    fill: variables.$textPrimaryColor;
+}
+
+.modal__input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 40px;
+    transition: border-color variables.$time variables.$time-function;
+    padding-left: 33px;
+
+    &:hover,
+    &:focus {
+        border-color:variables.$buttonAccentColor;
+        outline: none;
+    }
+}
+
+.modal__textarea-input {
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    height: 120px;
+    font-size: 14px;
+    font-weight: 400px;
+    font-family: 'DM Sans';
+    padding: 12px 16px;
+    transition: border-color variables.$time variables.$time-function;
+
+    &:hover,
+    &:focus {
+        border-color:variables.$buttonAccentColor;
+        outline: none;
+    }
+}
+
+.modal__caption {
+    font-size: 20px;
+    font-weight: 700;
+    font-family: "DM Sans";
+    line-height: calc(23/20);
+    color: variables.$textPrimaryColor;
+}
+
+.modal__checkbox-label {
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 30px;
+    display: flex;
+    cursor: pointer;
+}
+
+.modal__checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid variables.$textPrimaryColor;
+    border-radius: 2px;
+    margin-right: 8px;
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width:1200px){
+    .modal__caption{
+    margin-bottom: 12px;
+    display: flex;
+    text-align: center;
+}}
+
+@media (min-width: 480px) and (max-width: 1199px) {
+    .modal {
+        width: 450px;
+    }
+
+
+
+    .modal__caption {
+        margin-bottom: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .modal__label {
+        display: flex;
+        width: 370px;
+    }
+
+    .modal__textarea-input {
+        width: 370px;
+    }
+
+    .form-button {
+        margin-bottom: 40px;
+        margin-left: 80px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 479px) {
+    .modal {
+        width: 320px;
+    }
+
+
+
+    .modal__caption {
+        margin-bottom: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+    }
+
+    .modal__label {
+        display: flex;
+        width: 240px;
+    }
+
+    .modal__textarea-input {
+        width: 240px;
+    }
+
+    .form-button {
+        margin-bottom: 40px;
+        margin-left: 20px;
+    }
+}
