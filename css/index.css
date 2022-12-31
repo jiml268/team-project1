@@ -498,10 +498,10 @@ a {
 .heroMilk__button:hover, .heroMilk__button:focus {
   background-color: #D41443;
 }
-.heroMilk__button:hover .heroMilk__icon--desk, .heroMilk__button:hover .heroMilk__icon--desk {
+.heroMilk__button:hover .heroMilk__icon--desk, .heroMilk__button:focus .heroMilk__icon--desk {
   fill: #FFFFFF;
 }
-.heroMilk__button:hover .heroMilk__icon--tablet, .heroMilk__button:hover .heroMilk__icon--tablet {
+.heroMilk__button:hover .heroMilk__icon--tablet, .heroMilk__button:focus .heroMilk__icon--tablet {
   fill: #FFFFFF;
 }
 @media screen and (min-width: 1280px) {
@@ -2323,4 +2323,4 @@ ul {
     margin-bottom: 40px;
     margin-left: 20px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
