@@ -416,11 +416,11 @@
                 background-color: $buttonAccentColor;
             }
             &:hover .heroMilk__icon--desk,
-            &:hover .heroMilk__icon--desk {
+            &:focus .heroMilk__icon--desk {
                 fill: $buttonInverseColor ;
             }
             &:hover .heroMilk__icon--tablet,
-            &:hover .heroMilk__icon--tablet {
+            &:focus .heroMilk__icon--tablet {
                 fill: $buttonInverseColor ;
             }
         @media screen and (min-width:1280px) {
